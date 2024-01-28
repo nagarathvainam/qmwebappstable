@@ -1,0 +1,323 @@
+name: quizmaster
+description: Quiz Master
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+#version: 1.0.9+19
+version: 3.0.7+37
+
+environment:
+  sdk: '>=2.19.0-444.4.beta <3.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  google_fonts: ^6.1.0
+  http: ^1.2.0
+  gif_view: ^0.4.0
+  rive: ^0.12.4
+  package_info_plus: ^5.0.1
+  device_info_plus: ^9.1.1
+  win32: ^5.2.0
+  cupertino_icons: ^1.0.2
+  #flutter_native_splash: ^2.2.19
+  easy_splash_screen: ^1.0.4
+  flutter_launcher_icons: ^0.12.0
+  flutter_svg: ^2.0.1
+
+  video_player: ^2.6.1
+  build_runner: ^2.1.0
+  build_test: ^2.1.0
+  build_web_compilers: ^3.0.0
+
+  flutter_form_builder: ^7.7.0
+  form_builder_validators: ^8.4.0
+  circular_countdown: ^2.1.0
+  circular_countdown_timer: ^0.2.3
+  lottie: ^2.2.0
+  font_awesome_flutter: ^10.3.0
+  shared_preferences: ^2.0.17
+
+  flutter_otp_text_field: ^1.1.0+2
+  badges: ^3.0.2
+  image_picker: ^0.8.6+1
+  flutter_countdown_timer: ^4.1.0
+  dart_ipify: ^1.1.1
+  geolocator: ^9.0.2
+  firebase_messaging: ^14.4.1
+  cloud_firestore: ^4.3.1
+  firebase_auth: ^4.4.2
+  #percent_indicator: ^4.2.2
+  progress_indicator: ^0.2.2
+  #liquid_progress_indicator: ^0.4.0
+  #liquid_progress_indicator: ^0.4.0
+  custom_radio_grouped_button: ^2.1.2+2
+  charts_flutter: ^0.12.0
+  perfect_volume_control: ^1.0.5
+  #flutter_webview_plugin: ^0.4.0
+  connectivity_plus: ^3.0.3
+  simple_audio_player: ^0.2.1
+  analog_clock: ^0.1.1
+  file_picker: ^5.2.5
+  flutter_plugin_android_lifecycle: ^2.0.6
+  plugin_platform_interface: ^2.1.2
+  ffi: ^2.0.1
+  path: ^1.8.0
+
+  flutter_local_notifications: ^13.0.0
+  #firebase_core_web: ^2.2.2
+  in_app_webview: ^0.0.9
+  #flutter_login_facebook: ^1.7.0
+  #flutter_facebook_auth: ^5.0.8
+  google_sign_in: ^6.0.2
+  sign_in_with_apple: ^4.3.0
+  flutter_material_color_picker: ^1.1.0+2
+  flutter_web_browser: "^0.17.1"
+  #flutter_cashfree_pg_sdk: ^2.0.10+13
+  #flutter_cashfree_pg_sdk: "^2.0.12+15"
+  #flutter_easyloading: ^3.0.5
+  #cashfree: ^0.1.1
+  #intl: ^0.12.0
+  path_provider: ^2.0.15
+  device_information: ^0.0.4
+  permission_handler: ^10.3.0
+  baseflow_plugin_template: ^2.1.2
+  #flutter_background: ^1.2.0
+  #android_multiple_identifier: ^1.0.3
+  #device_imei: ^0.0.4+1
+  #timezone: ^0.9.2
+  #flutter_facebook_sdk: ^1.0.0
+  flutter_facebook_keyhash: ^0.0.4
+  flutter_cashfree_pg_sdk: ^2.0.12+15
+  #flutter_cashfree_pg_sdk: ^2.0.10+13
+  mailto: ^2.0.0
+  custom_check_box: ^0.0.4
+  #flutter_jailbreak_detection: ^1.10.0
+  #flutter_overlay_window: ^0.4.3
+  uuid: ^3.0.7
+  #flutter_logs: ^2.1.10
+  http_status_code: ^0.0.2
+  #flutter_animated_loadingkit: ^0.0.1
+  #flutter_loading_animation_kit: ^0.0.2
+  dio: ^5.4.0
+dependency_overrides:
+    intl: any
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/logo.png"
+  ios: true
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+      - assets/
+      - audios/
+      - assets/icons/
+      - assets/quiz-0.png
+      - assets/icons/minimize.png
+      - assets/video/winning.mp4
+      - assets/drawer/termsofuse.svg
+      - assets/icons/vector-zTQ.png
+      - assets/icons/wrong_indication.png
+      - assets/icons/layerx00201-822.png
+      - assets/icons/home.png
+      - assets/icons/rupees-red.png
+      - assets/icons/debit-coins.png
+      - assets/icons/mmw-coins.png
+      - assets/drawer/processing.svg
+      - assets/drawer/completed.svg
+      - assets/icons/cellular-Jhf.png
+      - assets/icons/vector-49.png
+      - assets/icons/wifi.png
+      - assets/icons/battery-iphone-12-mini.png
+      - assets/icons/wifi-XUd.png
+      - assets/icons/layerx00201-822.png
+      - assets/icons/eva-arrow-back-outline-dr9.png
+      - assets/icons/auto-group-9hku.png
+      - assets/icons/Frame 762428.svg
+      - assets/video/splash.mp4
+      - assets/icons/vector-iEd.png
+      - assets/icons/vector-UDo.png
+      #- assets/icons/cellular.png
+      - assets/icons/ellipse-668.png
+      - assets/icons/subtract-9pM.png
+      #- assets/icons/frame-762428.png
+      - assets/icons/vector-LW5.png
+      - assets/icons/background-schedule.png
+      - assets/icons/withdraw-separator-line.svg
+      - assets/icons/vector-x2d.png
+      - assets/icons/info.png
+      - assets/icons/timesup_almost.png
+      - assets/background/question_indication.png
+      - assets/icons/qi-add.png
+      - assets/icons/schedule-time.png
+      - assets/icons/backupofquiz-master-logo-1.png
+      - assets/icons/layerx00201.png
+      - assets/icons/vector-Fvq.png
+      - assets/icons/subtract-jVj.png
+      - assets/icons/vector.png
+      - assets/icons/vector-9Yu.png
+      - assets/icons/vector-45P.png
+      - assets/drawer/
+      - assets/drawer/rateus.svg
+#      - assets/icons/fluent-search-24-filled.png
+#      - assets/icons/frame-1290-ZBH.png
+#      - assets/icons/fluent-delete-48-filled-9CJ.png
+#      - assets/icons/akar-icons-cross-tkW.png
+#      - assets/icons/frame-1210-ZiE.png
+#      - assets/icons/fluent-delete-48-filled-dCS.png
+#      - assets/icons/frame-1211-sy8.png
+#      - assets/icons/akar-icons-cross-Fze.png
+#      - assets/icons/frame-1459-VJn.png
+#      - assets/icons/fluent-delete-48-filled-psx.png
+#      - assets/icons/akar-icons-chevron-down-EBM.png
+#      - assets/background/group-762361.png
+#      - assets/icons/group-mzK.png
+#      - assets/icons/mingcute-currency-rupee-line-Yz7.png
+#      - assets/icons/akar-icons-circle-check-fill-dBq.png
+#      - assets/background/group-762363.png
+#      - assets/icons/mingcute_wallet-fill.png
+#      - assets/icons/coin-1-68T.png
+#      - assets/icons/healthicons-money-bag.png
+#      - assets/icons/fluent-trophy-20-filled-hZm.png
+#      - assets/icons/uil-money-withdrawal.png
+#      - assets/icons/nosignal-1.png
+#      - assets/icons/sad-1.png
+#      - assets/icons/group-1319-o3L.png
+#      - assets/icons/auto-group-crz4.png
+#      - assets/icons/group-1319-zke.png
+#      - assets/icons/group-24-jYi.png
+#      - assets/icons/group-24-3EW.png
+#      - assets/icons/layer-2-2.png
+#      - assets/icons/star-1.png
+#      - assets/icons/group.png
+#      - assets/icons/group-24-cVU.png
+#      - assets/background/group-762360.png
+#      - assets/icons/bitmap.png
+#      - assets/icons/group-1319.png
+#      - assets/icons/group-1319-mot.png
+#      - assets/logo.png
+#      - assets/logo_white.png
+#      - assets/splash_bg.png
+#      - assets/icons/
+#      - assets/RiveAssets/
+#      - assets/video/
+#      - assets/video/splash.mp4
+#      - assets/loader-blue.gif
+#      - assets/loader-white.gif
+#      - assets/drawer/
+#      - assets/icons/schedule-time.png
+#      - assets/icons/qi-add.png
+#      - assets/icons/coins.png
+#      - assets/icons/coin-1.png
+#      - assets/icons/akar-icons-chevron-down-DR5.png
+#      - assets/icons/uil-money-withdrawal-U4s.png
+#      - assets/icons/wallet-1.png
+#      - assets/icons/fluent-trophy-20-filled-5yM.png
+#      - assets/icons/healthicons-money-bag-8fD.png
+#      - assets/icons/wallet-1.png
+#      - assets/icons/rupee.png
+#      - assets/icons/icon-park-ranking-ZJn.png
+#      - assets/icons/ellipse-293.png
+#      - assets/icons/frame-762363.png
+#      - assets/icons/icon-park-solid-check-correct.png
+#      - assets/icons/trophy-1-1.png
+#      - assets/icons/sleeping-1.png
+#      - assets/icons/vector-Bcz.png
+#      - assets/icons/group-24-6iA.png
+#      - assets/icons/group-1319-vWA.png
+#      - assets/icons/auto-group-yuux.png
+#      - assets/icons/group-24-eRt.png
+#      - assets/icons/group-1319-YoG.png
+#      - assets/icons/fluent-trophy-20-filled-eD9.png
+#      - assets/images/ellipse-38-bg-EKM.png
+#      - assets/images/ellipse-38-bg-1b9.png
+#      - assets/icons/fluent-trophy-20-filled-EVZ.png
+#      - assets/icons/fluent-trophy-20-filled-nyh.png
+#      - assets/images/vector-2jm.png
+#      - assets/background/group-762360-CYT.png
+#      - assets/icons/fa6-solid-crown.png
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat/Montserrat-Regular.ttf
+        - asset: assets/fonts/Montserrat/Montserrat-Italic.ttf
+    - family: Opensans
+      fonts:
+        - asset: assets/fonts/Opensans/OpenSans-Regular.ttf
+        - asset: assets/fonts/Opensans/OpenSans-Italic.ttf
+        - asset: assets/fonts/Opensans/OpenSans-SemiBold.ttf
+          weight: 600
+  #fonts:
+  #  - family: Intel
+  #    fonts:
+  #      - asset: assets/Fonts/Inter-Regular.ttf
+  #      - asset: assets/Fonts/Inter-SemiBold.ttf
+  #        weight: 600
+  #  - family: Poppins
+  #    fonts:
+  #      - asset: assets/Fonts/Poppins-Bold.ttf
+  #        weight: 700
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
