@@ -203,6 +203,8 @@ flutter:
       - assets/icons/vector-45P.png
       - assets/drawer/
       - assets/drawer/rateus.svg
+      - assets/background/group-762361.png
+      - assets/background/group-762363.png
 #      - assets/icons/fluent-search-24-filled.png
 #      - assets/icons/frame-1290-ZBH.png
 #      - assets/icons/fluent-delete-48-filled-9CJ.png

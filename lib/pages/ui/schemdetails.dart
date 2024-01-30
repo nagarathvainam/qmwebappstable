@@ -165,7 +165,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
           showSnackBarWithoutExit('Insufficient Coin Wallet');
         }
         if(int.parse(mainBalance)<int.parse(databaseQuestion.totalAnswer)){
-          showSnackBarWithoutExit('Insufficient Main Wallet');
+          //showSnackBarWithoutExit('Insufficient Main Wallet');
         }
 
         if(int.parse(qiCoinBalance)<int.parse(databaseQuestion.totalAnswer) && int.parse(mainBalance)<int.parse(databaseQuestion.totalAnswer)){
@@ -619,7 +619,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
                                           print("Main Balance:$mainBalance");
                                           print("totalAnswer:$totalAnswer");
                                           if(int.parse(mainBalance)<int.parse(totalAnswer)){
-                                            showSnackBarWithoutExit('Insufficient Main Wallet');
+                                           // showSnackBarWithoutExit('Insufficient Main Wallet');
                                             mainvalueselected = false;
                                             checkedOverAllTotal=0;
                                           }else{

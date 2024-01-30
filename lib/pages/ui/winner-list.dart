@@ -295,8 +295,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1.76*fem, 12.49*fem),
                                         child: RichText(
                                           text: TextSpan(
-                                            style: SafeGoogleFont (
-                                              firstRankName,
+                                            style: TextStyle (
                                               fontSize: 44*ffem,
                                               fontWeight: FontWeight.w400,
                                               height: 0.3636363636*ffem/fem,
@@ -305,9 +304,8 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                             children: [
                                               TextSpan(
                                                 text: '1',
-                                                style: SafeGoogleFont (
-                                                  firstRankName,
-                                                  fontSize: 44*ffem,
+                                                style:  TextStyle (
+                                                fontSize: 44*ffem,
                                                   fontWeight: FontWeight.w700,
                                                   height: 0.3636363636*ffem/fem,
                                                   color: Color(0xffffffff),
@@ -315,9 +313,8 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                               ),
                                               TextSpan(
                                                 text: 'st',
-                                                style: SafeGoogleFont (
-                                                  firstRankName,
-                                                  fontSize: 44*ffem,
+                                                style:  TextStyle (
+                                                fontSize: 44*ffem,
                                                   fontWeight: FontWeight.w400,
                                                   height: 0.3636363636*ffem/fem,
                                                   color: Color(0xffffffff),

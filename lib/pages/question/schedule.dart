@@ -568,11 +568,11 @@ class _QuestionDynamicUiPageState extends State<QuestionDynamicUiPage>{//  with 
                                     // Reschedule Count Donw Script Loading - End
                                     final currentTimeStr =data[index]['currentTime'];//DateTime.now();
 
-                                    var currentDateTimeSplit=currentTimeStr.split("T");
+                                    var currentDateTimeSplit=currentTimeStr.split(" ");
                                     var currentDateSplit=currentDateTimeSplit[0].split("-");
-                                    var current_yr=currentDateSplit[0];
+                                    var current_yr=currentDateSplit[2];
                                     var current_mn=currentDateSplit[1];
-                                    var current_dt=currentDateSplit[2];
+                                    var current_dt=currentDateSplit[0];
                                     var currentTimeSplit=currentDateTimeSplit[1].split(":");
                                     var current_hr=currentTimeSplit[0];
                                     var current_mi=currentTimeSplit[1];
