@@ -123,6 +123,8 @@ dependencies:
   #flutter_animated_loadingkit: ^0.0.1
   #flutter_loading_animation_kit: ^0.0.2
   dio: ^5.4.0
+  get: ^4.6.6
+  loading_indicator: ^3.1.1
 dependency_overrides:
     intl: any
 dev_dependencies:
@@ -135,6 +137,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -181,6 +184,7 @@ flutter:
       - assets/video/splash.mp4
       - assets/icons/vector-iEd.png
       - assets/icons/vector-UDo.png
+      - assets/loginsubtitle.png
       #- assets/icons/cellular.png
       - assets/icons/ellipse-668.png
       - assets/icons/subtract-9pM.png

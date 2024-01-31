@@ -161,7 +161,7 @@ class _QuestionTimerIntroUiPageState extends State<QuestionTimerIntroUiPage>  wi
           showSnackBarSessionTimeOut(databaseUser
               .responseDescription);
         });
-      }e:
+      }
     });
   }
   showSnackBarSessionTimeOut(message) async {

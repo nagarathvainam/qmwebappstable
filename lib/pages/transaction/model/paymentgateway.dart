@@ -63,7 +63,7 @@ class PaymentGatewayModel {
       "GroupRefID": "$QuizTypeRefID"
     });
 
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/PaySchedule":"http://uat.quizmaster.world/api/s1/$prefix/PaySchedule";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/PaySchedule":"http://188.214.129.98:5002/api/s1/$prefix/PaySchedule";
     Constants.printMsg("Body of PaySchedule:$body");
 
     var response = await http.post(Uri.parse(myUrl),
@@ -98,7 +98,7 @@ class PaymentGatewayModel {
       "mail": "$email",
       "LinkMode":"Web"
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.pg+"."+Constants.API_BASE_URL+"/api/S1/CashFreePG/PGRequest":"http://uat.quizmaster.world:2012/api/S1/CashFreePG/PGRequest";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.pg+"."+Constants.API_BASE_URL+"/api/S1/CashFreePG/PGRequest":"http://188.214.129.98:5002:2012/api/S1/CashFreePG/PGRequest";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -127,7 +127,7 @@ class PaymentGatewayModel {
           "UserTypeRefID":"5"
         }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/QI/ApproveWithdraw":"http://uat.quizmaster.world/api/s1/QI/ApproveWithdraw";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/QI/ApproveWithdraw":"http://188.214.129.98:5002/api/s1/QI/ApproveWithdraw";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -153,7 +153,7 @@ class PaymentGatewayModel {
           ,"FromDate":"2023-01-01","ToDate":"3023-12-31"
         }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/Transaction":"http://uat.quizmaster.world/api/s1/$prefix/Transaction";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/Transaction":"http://188.214.129.98:5002/api/s1/$prefix/Transaction";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -203,7 +203,7 @@ class PaymentGatewayModel {
       // "state": "$state",
       // "pincode": "$pincode"
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/AddBank":"http://uat.quizmaster.world/api/s1/$prefix/AddBank";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/AddBank":"http://188.214.129.98:5002/api/s1/$prefix/AddBank";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -345,7 +345,7 @@ class PaymentGatewayModel {
       "approvedStatusRefID":"$approvedStatusRefID"
     }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/mtb":"http://uat.quizmaster.world/api/s1/$prefix/mtb";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/mtb":"http://188.214.129.98:5002/api/s1/$prefix/mtb";
     Constants.printMsg("/api/s1/QI/mtb: $myUrl");
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
@@ -474,7 +474,7 @@ class PaymentGatewayModel {
       "UserBankRefId":"$UserBankRefId"
     }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/AccountDelete":"http://uat.quizmaster.world/api/s1/$prefix/AccountDelete";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/AccountDelete":"http://188.214.129.98:5002/api/s1/$prefix/AccountDelete";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -496,7 +496,7 @@ class PaymentGatewayModel {
       "UserTypeRefID": "5"
     }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/AccountInfo":"http://uat.quizmaster.world/api/s1/$prefix/AccountInfo";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/AccountInfo":"http://188.214.129.98:5002/api/s1/$prefix/AccountInfo";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -530,7 +530,7 @@ class PaymentGatewayModel {
       "UserTypeRefID":"5",
       "Amount":"$amount"
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.balance+"."+Constants.API_BASE_URL+"/api/s1/$prefix/Withdraw":"http://uat.quizmaster.world/api/s1/$prefix/Withdraw";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.balance+"."+Constants.API_BASE_URL+"/api/s1/$prefix/Withdraw":"http://188.214.129.98:5002/api/s1/$prefix/Withdraw";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -566,7 +566,7 @@ class PaymentGatewayModel {
 
     });
 
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.mtb+"."+Constants.API_BASE_URL+"/api/s1/PO/PayOut":"http://uat.quizmaster.world/api/s1/PO/PayOut";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.mtb+"."+Constants.API_BASE_URL+"/api/s1/PO/PayOut":"http://188.214.129.98:5002/api/s1/PO/PayOut";
     Constants.printMsg("myUrl /api/s1/PO/PayOut:$myUrl");
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
@@ -601,7 +601,7 @@ class PaymentGatewayModel {
       "BeneID":"$benid"
     });
 
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/ApproveWithdraw":"http://uat.quizmaster.world/api/s1/$prefix/ApproveWithdraw";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/ApproveWithdraw":"http://188.214.129.98:5002/api/s1/$prefix/ApproveWithdraw";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -622,7 +622,7 @@ class PaymentGatewayModel {
       "statusMessage": "$statusMessage"
     });
     print("/api/s1/PO/PayOutUpdate:$body");
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.mtb+"."+Constants.API_BASE_URL+"/api/s1/PO/PayOutUpdate":"http://uat.quizmaster.world/api/s1/PO/PayOutUpdate";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.mtb+"."+Constants.API_BASE_URL+"/api/s1/PO/PayOutUpdate":"http://188.214.129.98:5002/api/s1/PO/PayOutUpdate";
     Constants.printMsg("/api/s1/PO/PayOutUpdate:$myUrl");
     Constants.printMsg("/api/s1/PO/PayOutUpdate Body:$myUrl");
     var response =await http.post(Uri.parse(myUrl),
@@ -652,7 +652,7 @@ class PaymentGatewayModel {
       "UserTypeRefID":"5"
     }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.master+"."+Constants.API_BASE_URL+"/api/s1/PG/UpdatePGTransaction":"http://uat.quizmaster.world/api/s1/PG/UpdatePGTransaction";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.master+"."+Constants.API_BASE_URL+"/api/s1/PG/UpdatePGTransaction":"http://188.214.129.98:5002/api/s1/PG/UpdatePGTransaction";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,

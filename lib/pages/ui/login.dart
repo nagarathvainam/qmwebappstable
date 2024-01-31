@@ -625,7 +625,13 @@ print(Platform.isIOS);
                   height: 47,
                   width: 246,
                   child: Image.asset("assets/loginqtitle.png")),
-              const Align(
+
+              SizedBox(
+                  height: 47,
+                  width: 246,
+                  child: Image.asset("assets/loginsubtitle.png")),
+
+              /*const Align(
                 alignment: Alignment.center,
                 child: Text(
                   "Quiz Game",
@@ -635,7 +641,7 @@ print(Platform.isIOS);
                       fontWeight: FontWeight.bold,
                       fontFamily: "Montserrat"),
                 ),
-              ),
+              ),*/
               Image.asset(
                 "assets/photo.png",
                 width: 339.0,

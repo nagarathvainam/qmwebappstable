@@ -163,7 +163,7 @@ class Question {
           "QuestionRefID":"$QuestionRefID"
         }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.questions+"."+Constants.API_BASE_URL+"/api/s1/win/QuestionWinners":"http://uat.quizmaster.world/api/s1/win/QuestionWinners";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.questions+"."+Constants.API_BASE_URL+"/api/s1/win/QuestionWinners":"http://188.214.129.98:5002/api/s1/win/QuestionWinners";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -213,7 +213,7 @@ class Question {
       "Date":"$currentDate"
     }
     );
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.report+"."+Constants.API_BASE_URL+"/api/s1/QI/UserWiseAnswerQuestion":"http://uat.quizmaster.world/api/s1/QI/UserWiseAnswerQuestion";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.report+"."+Constants.API_BASE_URL+"/api/s1/QI/UserWiseAnswerQuestion":"http://188.214.129.98:5002/api/s1/QI/UserWiseAnswerQuestion";
     Constants.printMsg("UserWiseAnswerQuestion myUrl:$myUrl");
     Constants.printMsg("UserWiseAnswerQuestion body:$body");
     var response =await http.post(Uri.parse(myUrl),
@@ -242,7 +242,7 @@ class Question {
     final body = jsonEncode({
       "QuestionRefID":"$questionRefID"
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.questions+"."+Constants.API_BASE_URL+"/api/s1/QI/AnswersPer":"http://uat.quizmaster.world/api/s1/QI/AnswersPer";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.questions+"."+Constants.API_BASE_URL+"/api/s1/QI/AnswersPer":"http://188.214.129.98:5002/api/s1/QI/AnswersPer";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -270,7 +270,7 @@ class Question {
     final body = jsonEncode({
       "UserRefID":"$userRefID",
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.report+"."+Constants.API_BASE_URL+"/api/s1/win/UserQuizPlayed":"http://uat.quizmaster.world/api/s1/win/UserQuizPlayed";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.report+"."+Constants.API_BASE_URL+"/api/s1/win/UserQuizPlayed":"http://188.214.129.98:5002/api/s1/win/UserQuizPlayed";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -297,7 +297,7 @@ class Question {
     final body = jsonEncode({
 
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.schedule+"."+Constants.API_BASE_URL+"/api/s1/$prefix/Schedule":"http://uat.quizmaster.world/api/s1/$prefix/Schedule";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.schedule+"."+Constants.API_BASE_URL+"/api/s1/$prefix/Schedule":"http://188.214.129.98:5002/api/s1/$prefix/Schedule";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -324,7 +324,7 @@ class Question {
     );
 
 
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.schedule+"."+Constants.API_BASE_URL+"/api/s1/$prefix/GetGroup":"http://uat.quizmaster.world/api/s1/$prefix/GetGroup";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.schedule+"."+Constants.API_BASE_URL+"/api/s1/$prefix/GetGroup":"http://188.214.129.98:5002/api/s1/$prefix/GetGroup";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -355,7 +355,7 @@ class Question {
       "ScheduleRefID":"$ScheduleRefID"
     });
     QuestionSynBody=body;
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/ScheduleSync":"http://uat.quizmaster.world/api/s1/$prefix/ScheduleSync";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/$prefix/ScheduleSync":"http://188.214.129.98:5002/api/s1/$prefix/ScheduleSync";
     Constants.printMsg("/api/s1/qi/ScheduleSync URL:"+myUrl);
     Constants.printMsg("/api/s1/qi/ScheduleSync body:"+body);
     var response =await http.post(Uri.parse(myUrl),
@@ -392,7 +392,7 @@ class Question {
     final body = jsonEncode({
     });
 
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.master+"."+Constants.API_BASE_URL+"/api/s1/master/PlayVideo":"http://uat.quizmaster.world/api/s1/master/PlayVideo";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.master+"."+Constants.API_BASE_URL+"/api/s1/master/PlayVideo":"http://188.214.129.98:5002/api/s1/master/PlayVideo";
     Constants.printMsg("Play Video:$myUrl");
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
@@ -418,7 +418,7 @@ class Question {
         }
     );
     Constants.printMsg("ScheduleWinners Body:"+body);
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.schedule+"."+Constants.API_BASE_URL+"/api/s1/win/ScheduleWinners":"http://uat.quizmaster.world/api/s1/win/ScheduleWinners";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.schedule+"."+Constants.API_BASE_URL+"/api/s1/win/ScheduleWinners":"http://188.214.129.98:5002/api/s1/win/ScheduleWinners";
     print("ScheduleWinners  myUrl:$myUrl");
 
     var response =await http.post(Uri.parse(myUrl),

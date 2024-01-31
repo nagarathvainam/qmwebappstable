@@ -34,7 +34,7 @@ class QuestionInsert {
     );
     answerinsertBody=body;
     Constants.printMsg("Answer Insert Body:$body");
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.questions+"."+Constants.API_BASE_URL+"/api/s1/QI/Answers":"http://uat.quizmaster.world/api/s1/QI/Answers";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.questions+"."+Constants.API_BASE_URL+"/api/s1/QI/Answers":"http://188.214.129.98:5002/api/s1/QI/Answers";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
@@ -72,7 +72,7 @@ class QuestionInsert {
     }
     );
     answerinsertPoorNetworkBody=body;
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/qi/GetPickAnswers":"http://uat.quizmaster.world/api/s1/qi/GetPickAnswers";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.trans+"."+Constants.API_BASE_URL+"/api/s1/qi/GetPickAnswers":"http://188.214.129.98:5002/api/s1/qi/GetPickAnswers";
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
       body: body,
