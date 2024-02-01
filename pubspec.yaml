@@ -185,6 +185,7 @@ flutter:
       - assets/icons/vector-iEd.png
       - assets/icons/vector-UDo.png
       - assets/loginsubtitle.png
+      - assets/gif/transaction.gif
       #- assets/icons/cellular.png
       - assets/icons/ellipse-668.png
       - assets/icons/subtract-9pM.png

@@ -779,7 +779,12 @@ print(Platform.isIOS);
                                   final prefs = await SharedPreferences
                                       .getInstance();
                                   await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
-
+                                  Navigator.pushAndRemoveUntil(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              QuestionDynamicUiPage()),
+                                          (e) => false);
                                   /*
                                   if (Platform.isIOS) {
                                     var uuid = Uuid();
