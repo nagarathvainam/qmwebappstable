@@ -37,7 +37,7 @@ class _SplashPageState extends State<SplashPage> {
       DeviceOrientation.portraitUp,
     ]);
 
-    //_controller = VideoPlayerController.network((Constants.staging_production>0)?"https://docs.quizmaster.world/UploadFiles/Video/AppOpen/QMLOGOvertical.mp4":"http://188.214.129.98:5002:2018/UploadFiles/Video/AppOpen/QMLOGOvertical.mp4");//"http://188.214.129.98:5002:2018/UploadFiles/QI/Vi/QILogi.mp4"
+    //_controller = VideoPlayerController.network((Constants.staging_production>0)?"https://docs.quizmaster.world/UploadFiles/Video/AppOpen/QMLOGOvertical.mp4":"https://uat.quizmaster.world:5001:2018/UploadFiles/Video/AppOpen/QMLOGOvertical.mp4");//"https://uat.quizmaster.world:5001:2018/UploadFiles/QI/Vi/QILogi.mp4"
 
     Future.delayed(Duration(seconds: 12), () async {
       final prefs = await SharedPreferences.getInstance();

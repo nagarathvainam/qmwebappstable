@@ -17,7 +17,7 @@ class Constants {
   static const String schedule="schedule";
   static const String trans="trans";
   static const String upload="upload";
-  static const String API_BASE_URL =(Constants.staging_production>0)?"quizmaster.world":"http://188.214.129.98:5002/api";
+  static const String API_BASE_URL =(Constants.staging_production>0)?"quizmaster.world":"https://uat.quizmaster.world:5001/api";
   static const String API_SEPRATE_URL="/api/s1/QI/";
   static const String baseThemeColor="5A2DBC";//f00991,652696,B6E810,497ECE,E70D93
   static const String buttonColor="FFB400";
@@ -73,7 +73,7 @@ class Constants {
   }
   static String cashfree_client_id="CF269323CHAUDP6H9MUU1FHVN4D0";
   static String cashfree_client_secret="0d5b8fd56fb26c276c017b060def5b62959d879b";
-
-  static double fem = Get.width / 414;
-  static double ffem = Get.width / 414 * 0.97;
+  //
+  // static double fem = Get.width / 414;
+  // static double ffem = Get.width / 414 * 0.97;
 }

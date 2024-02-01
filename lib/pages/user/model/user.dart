@@ -101,7 +101,7 @@ class User {
     };
     final body = jsonEncode({
     });
-    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.auth+"."+Constants.API_BASE_URL+"/api/s1/QI/AuthCheck":"http://188.214.129.98:5002/api/s1/QI/AuthCheck";
+    String myUrl = (Constants.staging_production>0)?Constants.https+Constants.auth+"."+Constants.API_BASE_URL+"/api/s1/QI/AuthCheck":"https://uat.quizmaster.world:5001/api/s1/QI/AuthCheck";
     Constants.printMsg(myUrl);
     var response =await http.post(Uri.parse(myUrl),
       headers: headers,
@@ -132,7 +132,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/Docs/Docs"
-        : "http://188.214.129.98:5002/api/s1/Docs/Docs";
+        : "https://uat.quizmaster.world:5001/api/s1/Docs/Docs";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -171,7 +171,7 @@ class User {
     Constants.printMsg(headers);
     var dio = Dio();
     var response = await dio.request(
-      'http://188.214.129.98:5002/api/s1/UI/GetUsersInfo',
+      'https://uat.quizmaster.world:5001/api/s1/UI/GetUsersInfo',
       options: Options(
         method: 'POST',
         headers: headers,
@@ -204,7 +204,7 @@ class User {
               "." +
               Constants.API_BASE_URL +
               "/api/s1/$prefix/Balance"
-          : "http://188.214.129.98:5002/api/s1/$prefix/Balance";
+          : "https://uat.quizmaster.world:5001/api/s1/$prefix/Balance";
       var response = await http.post(
         Uri.parse(myUrl),
         headers: headers,
@@ -225,7 +225,7 @@ class User {
       Constants.printMsg("Balance Info Body For Dio: $data");
       var dio = Dio();
       var response = await dio.request(
-        'http://188.214.129.98:5002/api/s1/UI/GetUsersInfo',
+        'https://uat.quizmaster.world:5001/api/s1/UI/GetUsersInfo',
         options: Options(
           method: 'POST',
           headers: headers,
@@ -281,7 +281,7 @@ class User {
               "." +
               Constants.API_BASE_URL +
               "/api/s1/$prefix/GetUsersInfo"
-          : "http://188.214.129.98:5002/api/s1/$prefix/GetUsersInfo"; // QC OK
+          : "https://uat.quizmaster.world:5001/api/s1/$prefix/GetUsersInfo"; // QC OK
       Constants.printMsg("MYURL:$myUrl");
       var response = await http.post(
         Uri.parse(myUrl),
@@ -331,7 +331,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/QI/PasswordUpdate"
-        : "http://188.214.129.98:5002/api/s1/QI/PasswordUpdate";
+        : "https://uat.quizmaster.world:5001/api/s1/QI/PasswordUpdate";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -367,7 +367,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/Docs/Upload"
-        : "http://188.214.129.98:5002/api/s1/Docs/Upload";
+        : "https://uat.quizmaster.world:5001/api/s1/Docs/Upload";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -431,7 +431,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/QI/AuthUser"
-        : "http://188.214.129.98:5002/api/s1/QI/AuthUser"; // QC OK
+        : "https://uat.quizmaster.world:5001/api/s1/QI/AuthUser"; // QC OK
     Constants.printMsg("Login AuthUser:" + myUrl);
     Constants.printMsg("Login AuthUser Body:$body");
     Constants.printMsg("Login AuthUser Header:$headers");
@@ -490,7 +490,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/Master/SendOTP"
-        : "http://188.214.129.98:5002/api/s1/Master/SendOTP";
+        : "https://uat.quizmaster.world:5001/api/s1/Master/SendOTP";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -518,7 +518,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/Master/State"
-        : "http://188.214.129.98:5002/api/s1/master/State";
+        : "https://uat.quizmaster.world:5001/api/s1/master/State";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -593,7 +593,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/$prefix/UpdateUserInfo"
-        : "http://188.214.129.98:5002/api/s1/$prefix/UpdateUserInfo";
+        : "https://uat.quizmaster.world:5001/api/s1/$prefix/UpdateUserInfo";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -621,7 +621,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/Master/OTPValidate"
-        : "http://188.214.129.98:5002/api/s1/Master/OTPValidate";
+        : "https://uat.quizmaster.world:5001/api/s1/Master/OTPValidate";
     Constants.printMsg("/api/s1/Master/OTPValidate:$body");
     var response = await http.post(
       Uri.parse(myUrl),
@@ -652,7 +652,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/$prefix/PasswordUpdate"
-        : "http://188.214.129.98:5002/api/s1/$prefix/PasswordUpdate";
+        : "https://uat.quizmaster.world:5001/api/s1/$prefix/PasswordUpdate";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -680,7 +680,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/win/OverAllWinningQuizCount"
-        : "http://188.214.129.98:5002/api/s1/win/OverAllWinningQuizCount";
+        : "https://uat.quizmaster.world:5001/api/s1/win/OverAllWinningQuizCount";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -711,7 +711,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/$prefix/BlockStatus"
-        : "http://188.214.129.98:5002/api/s1/$prefix/BlockStatus";
+        : "https://uat.quizmaster.world:5001/api/s1/$prefix/BlockStatus";
     var response = await http.post(
       Uri.parse(myUrl),
       headers: headers,
@@ -778,7 +778,7 @@ class User {
             "." +
             Constants.API_BASE_URL +
             "/api/s1/QI/UpdateUserInfo"
-        : "http://188.214.129.98:5002/api/s1/QI/UpdateUserInfo";
+        : "https://uat.quizmaster.world:5001/api/s1/QI/UpdateUserInfo";
     Constants.printMsg("myUrl:$myUrl");
     var response = await http.post(
       Uri.parse(myUrl),
