@@ -74,8 +74,7 @@ class _ProfileWinningDetailsState extends State<ProfileWinningDetails> {
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
     final prefs = await SharedPreferences.getInstance();
 
-    await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
-    await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+
     Constants.displayName="";
     Constants.surName="";
  // Replaced Constants.userRefID

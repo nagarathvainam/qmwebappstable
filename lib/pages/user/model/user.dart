@@ -463,7 +463,7 @@ class User {
     loginType = data['data']['loginType'].toString();
     firstLoginUpdated = data['data']['firstLoginUpdated'];
     deviceid = deviceId;
-    await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+    //await //prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
     //await prefs.setString('qsid',qsid);
     if (data['data']['userRefID'] != Null ||
         data['data']['userRefID'] != 'Null' ||

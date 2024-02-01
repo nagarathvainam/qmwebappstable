@@ -545,7 +545,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
     final prefs = await SharedPreferences.getInstance();
     //Constants.qsid="";
-    await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+    //await //prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
     Constants.displayName="";
     Constants.surName="";
     // Replaced Constants.userRefID
@@ -617,7 +617,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
     final prefs = await SharedPreferences.getInstance();
 
-    await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+
     Constants.displayName="";
     Constants.surName="";
     // Replaced Constants.userRefID

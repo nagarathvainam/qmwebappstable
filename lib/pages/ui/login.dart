@@ -774,7 +774,13 @@ print(Platform.isIOS);
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(12),
                                     )),
-                                onPressed: () {
+                                onPressed: () async {
+
+                                  final prefs = await SharedPreferences
+                                      .getInstance();
+                                  await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+
+                                  /*
                                   if (Platform.isIOS) {
                                     var uuid = Uuid();
                                     DeviceID=uuid.v1();
@@ -788,6 +794,7 @@ print(Platform.isIOS);
                                       int? moblen=_formKey
                                           .currentState?.value['mobile'].toString().length;
                                       if(moblen!=null && moblen>9) {
+
                                         databaseUser
                                             .login(
                                             _formKey
@@ -920,7 +927,7 @@ print(Platform.isIOS);
                                     }
                                   }else{
                                     showSnackBar("Your mobile device and other configuration doesn't captured properly.try again with check all permission including notification required & re-install it.");
-                                  }
+                                  }*/
                                 },
                                 child: const Text(
                                   'Continue',
@@ -933,7 +940,7 @@ print(Platform.isIOS);
                             ),
                           ],
                         )),
-                    Padding(
+                    /*Padding(
                         padding:
                             EdgeInsets.only(left: 16.0, right: 16.0, top: 10.0),
                         child: Row(
@@ -953,11 +960,11 @@ print(Platform.isIOS);
                               ),
                             ),
                           ],
-                        )),
+                        )),*/
                     SizedBox(
                       height: 30.0,
                     ),
-                   Padding(
+                   /*Padding(
                         padding:
                             EdgeInsets.only(left: 50.0, right: 50.0, top: 0.0),
                         child: Row(
@@ -1002,17 +1009,11 @@ print(Platform.isIOS);
                                         SizedBox(
                                           width: 60,
                                         ),
-                                       // ),
-                                        /*SizedBox(
-                                          width: 10,
-                                        ),
-                                        Expanded(
-                                          child: Image.asset("assets/mac.png"),
-                                        ),*/
+
                                       ],
                                     )))
                           ],
-                        )),
+                        )),*/
 
                     SizedBox(
                       height: 20.0,

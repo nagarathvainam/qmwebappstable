@@ -428,7 +428,7 @@ class _PinUiPageState extends State<PinUiPage> {
                                             Constants.dob=databaseUser.dob;
                                             Constants.photo=databaseUser.photo;
                                             Constants.name=databaseUser.name;
-                                            await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+                                            await //prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
                                             //await prefs.setString('qsid', databaseUser.qsid);
                                             await prefs.setString('userRefID', databaseUser.userRefID);
 
@@ -457,7 +457,7 @@ class _PinUiPageState extends State<PinUiPage> {
 
                                             final prefs = await SharedPreferences
                                                 .getInstance();
-                                            await prefs.setString('qsid', databaseUser.qsid);
+                                            //await prefs.setString('qsid', databaseUser.qsid);
                                             Constants.displayName=databaseUser.displayName;
                                             Constants.surName=databaseUser.surName;
                                             //Constants.userRefID=databaseUser.userRefID;

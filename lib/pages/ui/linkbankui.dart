@@ -77,7 +77,7 @@ class _LinkBankUIState extends State<LinkBankUI> {
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
     final prefs = await SharedPreferences.getInstance();
 
-    await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+    await //prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
     await prefs.setString('userRefID', "");
     Constants.displayName="";
     Constants.surName="";

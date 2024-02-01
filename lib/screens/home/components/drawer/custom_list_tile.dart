@@ -54,7 +54,7 @@ class CustomListTile extends StatelessWidget {
       child: Text("Ok"),
       onPressed:  () async{
         final prefs = await SharedPreferences.getInstance();
-        await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+        //await //prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
         //await prefs.setString('qsid',"");
         Navigator.pushAndRemoveUntil(
             context,
@@ -143,7 +143,7 @@ class CustomListTile extends StatelessWidget {
                 ),
                 onPressed: () async{
                   final prefs = await SharedPreferences.getInstance();
-                  await prefs.setString('qsid', "tlLlU+89NAO4y3u7wKhuPQ==");
+                  await prefs.setString('qsid', "");
                   await prefs.setString('userRefID', "");
                   Constants.displayName="";
                   Constants.surName="";
