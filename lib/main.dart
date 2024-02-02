@@ -82,7 +82,7 @@ void main() async {
 
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor: Colors.white, // navigation bar color
-    statusBarColor: Color(0xff5A2DBC),
+    statusBarColor: Color(0xff5924CE),
     // status bar color
   ));
   WidgetsFlutterBinding.ensureInitialized();
