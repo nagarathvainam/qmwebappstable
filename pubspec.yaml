@@ -92,8 +92,8 @@ dependencies:
   in_app_webview: ^0.0.9
   #flutter_login_facebook: ^1.7.0
   #flutter_facebook_auth: ^5.0.8
-  google_sign_in: ^6.0.2
-  sign_in_with_apple: ^4.3.0
+  #google_sign_in: ^6.0.2
+  #sign_in_with_apple: ^4.3.0
   flutter_material_color_picker: ^1.1.0+2
   flutter_web_browser: "^0.17.1"
   #flutter_cashfree_pg_sdk: ^2.0.10+13
@@ -287,6 +287,7 @@ flutter:
       - assets/images/vector-2jm.png
       - assets/background/group-762360-CYT.png
       - assets/icons/fa6-solid-crown.png
+      - assets/question/frame-762466.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

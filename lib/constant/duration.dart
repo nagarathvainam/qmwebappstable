@@ -13,9 +13,9 @@ class Durations {
   static int devQuestionDisplay=1;
   static int mobileLogDisplay=1;
   static int otpdisplay=1;
-  static int granttotalquestionduration=(development>0)?30:30;//30
-  static int submitcontainerduration=(development>0)?10:5;//10
-  static int totalquestionduration=(development>0)?15:10;//15
-  static int timeupduration=(development>0)?20:10;//20
-  static int answercontainerduration=(development>0)?5:0;//5
+  // static int granttotalquestionduration=(development>0)?30:30;//30
+  // static int submitcontainerduration=(development>0)?10:5;//10
+  // static int totalquestionduration=(development>0)?15:10;//15
+  // static int timeupduration=(development>0)?20:10;//20
+  // static int answercontainerduration=(development>0)?5:0;//5
 }

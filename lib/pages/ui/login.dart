@@ -18,9 +18,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 //import 'package:flutter_login_facebook/flutter_login_facebook.dart';
 import 'dart:convert' show json;
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:http/http.dart' as http;
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
+
 
 import 'package:quizmaster/class/LoadingDialog.dart';
 import '../webview/privacy-policy.dart';
@@ -38,19 +37,7 @@ import 'dart:io' show Platform;
 import 'package:uuid/uuid.dart';
 import 'package:url_launcher/url_launcher.dart';
 final Uri _url_termsandconditions = Uri.parse('https://quizmaster.world/terms-and-conditions.html');
-GoogleSignIn _googleSignIn = GoogleSignIn(
-  // Optional clientId
-  // clientId: '479882132969-9i9aqik3jfjd7qhci1nqf0bm2g71rm1u.apps.googleusercontent.com',
 
-  clientId: "107216590461501707207",
-  // If you need to authenticate to a backend server, specify its OAuth client. This is optional.
-  //serverClientId: ...,
-
-  scopes: <String>[
-    'email',
-    'https://www.googleapis.com/auth/contacts.readonly',
-  ],
-);
 
 class LoginUiPage extends StatefulWidget {
   //final plugin = FacebookLogin(debug: true);
@@ -196,7 +183,7 @@ class _LoginUiPageState extends State<LoginUiPage> {
   String? _email;
   String? _imageUrl;
 
-  GoogleSignInAccount? _currentUser;
+
   String _contactText = '';
   void  saveAuthInfo(DeviceID,fcmtoken,platform,appName,apiLevel,version,packageName,packageInfo,buildNumber,lat,lon,ipv4) async {
     final prefs = await SharedPreferences.getInstance();
@@ -339,47 +326,12 @@ print(Platform.isIOS);
       // Got a new connectivity status!
     });
 
-      _googleSignIn.onCurrentUserChanged.listen((GoogleSignInAccount? account) {
-        setState(() {
-          _currentUser = account;
-        });
-        if (_currentUser != null) {
-          _handleGetContact(_currentUser!);
-        }
-      });
-      _googleSignIn.signInSilently();
+
 
   }
 
 
-  Future<void> _handleGetContact(GoogleSignInAccount user) async {
-    setState(() {
-      _contactText = 'Loading contact info...';
-    });
-    final http.Response response = await http.get(
-      Uri.parse('https://people.googleapis.com/v1/people/me/connections'
-          '?requestMask.includeField=person.names'),
-      headers: await user.authHeaders,
-    );
-    if (response.statusCode != 200) {
-      setState(() {
-        _contactText = 'People API gave a ${response.statusCode} '
-            'response. Check logs for details.';
-      });
-      print('People API ${response.statusCode} response: ${response.body}');
-      return;
-    }
-    final Map<String, dynamic> data =
-    json.decode(response.body) as Map<String, dynamic>;
-    final String? namedContact = _pickFirstNamedContact(data);
-    setState(() {
-      if (namedContact != null) {
-        _contactText = 'I see you know $namedContact!';
-      } else {
-        _contactText = 'No contacts to display.';
-      }
-    });
-  }
+
 
   String? _pickFirstNamedContact(Map<String, dynamic> data) {
     final List<dynamic>? connections = data['connections'] as List<dynamic>?;
@@ -401,54 +353,9 @@ print(Platform.isIOS);
     return null;
   }
 
-  Future<void> _handleSignIn() async {
-    try {
-      await _googleSignIn.signIn();
-    } catch (error) {
-      print(" Google Signin error $error");
-    }
-  }
 
-  Future<void> _handleSignOut() => _googleSignIn.disconnect();
 
-  Widget _buildBody() {
-    final GoogleSignInAccount? user = _currentUser;
-    if (user != null) {
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          ListTile(
-            leading: GoogleUserCircleAvatar(
-              identity: user,
-            ),
-            title: Text(user.displayName ?? ''),
-            subtitle: Text(user.email),
-          ),
-          const Text('Signed in successfully.'),
-          Text(_contactText),
-          ElevatedButton(
-            onPressed: _handleSignOut,
-            child: const Text('SIGN OUT'),
-          ),
-          ElevatedButton(
-            child: const Text('REFRESH'),
-            onPressed: () => _handleGetContact(user),
-          ),
-        ],
-      );
-    } else {
-      return Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          const Text('You are not currently signed in.'),
-          ElevatedButton(
-            onPressed: _handleSignIn,
-            child: const Text('SIGN IN'),
-          ),
-        ],
-      );
-    }
-  }
+
 
   navigateofflinescreen(){
     Navigator.pushAndRemoveUntil(

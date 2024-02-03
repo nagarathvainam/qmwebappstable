@@ -711,16 +711,29 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     });
   }
 
+  // _submitButtonEnable() {
+  //   //_timer2 = Timer( Duration(seconds: Durations.totalquestionduration), () { // Constants.totalquestionduration 15
+  //     setState(() {
+  //       //is_submitted=false;
+  //       submitContainer=false;
+  //       timer_container_1=false;
+  //       timer_container_2=true;
+  //     });
+  //   //});
+  // }
+
+
   _submitButtonEnable() {
-    //_timer2 = Timer( Duration(seconds: Durations.totalquestionduration), () { // Constants.totalquestionduration 15
+    _timer2 = Timer( Duration(seconds: 15), () { // Constants.totalquestionduration 15
       setState(() {
         //is_submitted=false;
         submitContainer=false;
         timer_container_1=false;
         timer_container_2=true;
       });
-    //});
+    });
   }
+
 
 
   // _timeupContainer() async {
@@ -1246,28 +1259,28 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
                                                           }
                                                         
                                                           //  if(Durations.development==0) {
-                                                              if (index == 0) {
-                                                                answerPick = "A";
-                                                              }
-                                                              if (index == 1) {
-                                                                answerPick = "B";
-                                                              }
-                                                              if (index == 2) {
-                                                                answerPick = "C";
-                                                              }
-                                                              selectedIndex =
-                                                                  index;
-                                                        
-                                                              selectedQues =
-                                                              databaseQuestion
-                                                                  .option[
-                                                              index];
+                                                          //     if (index == 0) {
+                                                          //       answerPick = "A";
+                                                          //     }
+                                                          //     if (index == 1) {
+                                                          //       answerPick = "B";
+                                                          //     }
+                                                          //     if (index == 2) {
+                                                          //       answerPick = "C";
+                                                          //     }
+                                                          //     selectedIndex =
+                                                          //         index;
+                                                          //
+                                                          //     selectedQues =
+                                                          //     databaseQuestion
+                                                          //         .option[
+                                                          //     index];
                                                            // }
 
                                                         });
                                                         //if(Durations.development==0){
-                                                          Constants.printMsg("Ontap calling when selected options B");
-                                                          dbQuestionInsert(qSchemeRefID,widget.scheduleRefID,widget.questionId,answerPick);
+                                                        //   Constants.printMsg("Ontap calling when selected options B");
+                                                        //   dbQuestionInsert(qSchemeRefID,widget.scheduleRefID,widget.questionId,answerPick);
                                                         //}
                                                       });
                                                 },
