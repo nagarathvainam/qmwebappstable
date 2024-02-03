@@ -378,7 +378,7 @@ class Question {
     qStartTime=data['data']['qStartTime'];
     //Constants.QuestionRefID=questionRefID;
     qWaitDuration=data['data']['qWaitDuration'];
-    //prefs.setString('QuestionRefID',questionRefID);
+    prefs.setString('QuestionRefID',questionRefID);
 
   }
 

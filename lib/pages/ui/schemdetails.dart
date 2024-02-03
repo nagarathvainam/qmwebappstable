@@ -162,7 +162,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
           mainvalueselected=true;
         }
         if(int.parse(qiCoinBalance)<int.parse(databaseQuestion.totalAnswer)){
-          showSnackBarWithoutExit('Insufficient Coin Wallet');
+          //showSnackBarWithoutExit('Insufficient Coin Wallet');
         }
         if(int.parse(mainBalance)<int.parse(databaseQuestion.totalAnswer)){
           //showSnackBarWithoutExit('Insufficient Main Wallet');
@@ -222,7 +222,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
 
     Future.delayed(Duration(seconds: 20), () async{
 
-      showSnackBarWithoutExit("This schedule completed / timeout");
+      //showSnackBarWithoutExit("This schedule completed / timeout");
       Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
@@ -704,7 +704,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
                                           print("Coin Balance:$qiCoinBalance");
                                           print("totalAnswer:$totalAnswer");
                                           if(int.parse(qiCoinBalance)<int.parse(totalAnswer)){
-                                            showSnackBarWithoutExit('Insufficient Coin Wallet');
+                                            //showSnackBarWithoutExit('Insufficient Coin Wallet');
                                             coinvalueselected = false;
                                             checkedOverAllTotal=0;
                                           }else{

@@ -266,7 +266,7 @@ class PaymentGatewayModel {
   cashFreeAddBankDetails(token,name,bankaccount,ifsc,email,benid) async{
     var email=Constants.mailID;
     var phone=Constants.mobileNumber;
-    var address1="QUIZ MASTER PVT LIMITED BANGALORE";
+    var address1="Quick Quiz PVT LIMITED BANGALORE";
     var city="BANGALORE";
     var state="Ka";
     var pincode="530068";

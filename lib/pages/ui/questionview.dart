@@ -112,6 +112,12 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
         QuestionSynBody=databaseQuestion.QuestionSynBody;
         QuestionSyncResponseCode=databaseQuestion.responseCode;
         QuestionSyncResponseDescription=databaseQuestion.responseDescription;
+        print("Kannan databaseQuestion.questionRefID");
+        print( databaseQuestion.questionRefID);
+        print("Kannan $qTotalCount");
+        print( qTotalCount);
+        print("Kannan $qPlayCount");
+        print( qPlayCount);
         prefs.setString('questionRefID', databaseQuestion.questionRefID);
         //Constants.QuestionRefID=databaseQuestion.questionRefID;
         prefs.setString('scheduleRefID',widget.scheduleRefID);
@@ -138,16 +144,16 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
           answeralphapet= databaseQuestion.answeralphapet;
         }*/
         Constants.scheduleRefID = (prefs.getString('scheduleRefID') ?? "");
-        QuestionRefID=(prefs.getString('scheduleRefID') ?? "");
+        QuestionRefID=(prefs.getString('QuestionRefID') ?? "");
         if (databaseQuestion.responseCode != '0') {
           //QuestionRefID = Constants.QuestionRefID;
           Future.delayed(Duration(seconds: 2), () async {
             syncData();
-            showSnackBar("You are used poor network-one");
+           // showSnackBar("You are used poor network-one");
           });
         }
         _question = databaseQuestion.question;
-        categoryRefID=(Constants.prefix!='')?"1":databaseQuestion.categoryRefID;
+        categoryRefID=(Constants.prefix!='')?"1":databaseQuestion.categoryRefID;//"1";
         caption=databaseQuestion.caption;
         imgWidth=databaseQuestion.width;
         imgHeight=databaseQuestion.height;
@@ -185,7 +191,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     simpleAudioPlayer.setPlaybackRate(rate: rateValue);
     simpleAudioPlayer.play();
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     syncData();
     Constants.printMsg("printMsg Question RefId:$QuestionRefID");
 
@@ -225,6 +231,9 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
       //if(Durations.questionTimerBased==0) {
         final prefs = await SharedPreferences.getInstance();
         var QuestionRefID=(prefs.getString('QuestionRefID') ?? "");
+        print("Sathish QuestionRefID $QuestionRefID");
+        print("Sathish qPlayCount $qPlayCount");
+        print("Sathish qTotalCount $qTotalCount");
         if (qPlayCount == qTotalCount && QuestionRefID == "") {
           Constants.scheduleRefID = (prefs.getString('scheduleRefID') ?? "");
 
@@ -272,6 +281,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
 
         //showSnackBarWithoutExit("Response Code:"+responseCode);
         //showSnackBarWithoutExit("Response Description:"+responseDescription);
+        print("Log 1:$log");
         if(responseCode!="0") {
           Future.delayed(Duration(seconds: 2), () async {
             _animationController.dispose();
@@ -413,6 +423,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
 
           });
         }
+        print("Log 2:$log");
         if (responseCode ==
             "0") {
           poornetworkflag="correct";
@@ -528,6 +539,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     });
   }
   showSnackBar(message) async {
+    /*
     final snackBar = SnackBar(
       backgroundColor: Colors.red,
       content: Text(message),
@@ -552,13 +564,10 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     Constants.mobileNumber="";
     Constants.photo="";
     Constants.mailID="";
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(
-            builder: (context) => LoginUiPage(title: '',url: '',)),
-            (e) => false);
+   */
   }
   showSnackBarWithoutExit(message) async {
+    /*
     final snackBar = SnackBar(
       backgroundColor: Colors.red,
       content: Text(message),
@@ -575,7 +584,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     // and use it to show a SnackBar.
     ScaffoldMessenger.of(context).showSnackBar(snackBar);
 
-
+*/
   }
   deviceAuthCheck() async {
     databaseUser
@@ -714,20 +723,32 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
   }
 
 
+  // _timeupContainer() async {
+  //  // _timer2 = Timer( Duration(seconds: Durations.timeupduration), () { // Constants.timeupduration 20
+  //     if (selectedQues == "" || is_submitted==false) {
+  //       answerPick="T";
+  //     }
+  //     /*if(Durations.questionviewdevelopent>0) {
+  //       if(Durations.development==1) {
+  //         dbQuestionInsert(qSchemeRefID, widget.scheduleRefID,
+  //             databaseQuestion.questionRefID.toString(), answerPick);
+  //             databaseQuestion.questionRefID.toString(), answerPick);
+  //       }
+  //     }*/
+  //
+  //
+  //  // });
+  // }
+
   _timeupContainer() async {
-   // _timer2 = Timer( Duration(seconds: Durations.timeupduration), () { // Constants.timeupduration 20
+    _timer2 = Timer( Duration(seconds:20 ), () { // Constants.timeupduration 20
       if (selectedQues == "" || is_submitted==false) {
         answerPick="T";
       }
-      /*if(Durations.questionviewdevelopent>0) {
-        if(Durations.development==1) {
-          dbQuestionInsert(qSchemeRefID, widget.scheduleRefID,
-              databaseQuestion.questionRefID.toString(), answerPick);
-        }
-      }*/
-
-
-   // });
+      dbQuestionInsert(qSchemeRefID, widget.scheduleRefID,
+                      databaseQuestion.questionRefID.toString(), answerPick);
+          //             databaseQuestion.questionRefID.toString(), answerPick);
+    });
   }
   void _readQuestionNavigation() async {
     final prefs = await SharedPreferences.getInstance();
@@ -1444,7 +1465,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
                                           fontSize: 22*ffem,
                                           fontWeight: FontWeight.w800,
                                           height: 1.4545454545*ffem/fem,
-                                          color: Color(0xffffffff),
+                                          color: Color(0xff000000),
                                         ),
                                       ): CircularProgressIndicator(),
                                     ),

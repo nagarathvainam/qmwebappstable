@@ -369,7 +369,7 @@ class _GamePolicyState extends State<GamePolicy> {
                                           maxWidth: 322*fem,
                                         ),
                                         child: Text(
-                                          'In order to register and participate in our Quiz Master App you are required to accurately provide the following information in your Quizer profile as per your Aadhar Card.',
+                                          'In order to register and participate in our Quick Quiz App you are required to accurately provide the following information in your Quizer profile as per your Aadhar Card.',
                                           style: SafeGoogleFont (
                                             'Open Sans',
                                             fontSize: 16*ffem,

@@ -216,7 +216,7 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
                                         maxWidth: 305*fem,
                                       ),
                                       child: Text(
-                                        'Quiz Master Private Ltd respects the privacy of its Users and is committed to protect it in all respects',
+                                        'Quick Quiz Private Ltd respects the privacy of its Users and is committed to protect it in all respects',
                                         style: SafeGoogleFont (
                                           'Open Sans',
                                           fontSize: 16*ffem,
@@ -282,7 +282,7 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
                                         maxWidth: 323*fem,
                                       ),
                                       child: Text(
-                                        'In certain instances, we collect personal information from you on the Quiz Master app means such personal information which consists of information relating to your financial information, such as information regarding the payment instrument/modes used by you to make such payments, which may include cardholder name, credit/debit card number (in encrypted form) with expiration date, banking details, wallet details etc.',
+                                        'In certain instances, we collect personal information from you on the Quick Quiz app means such personal information which consists of information relating to your financial information, such as information regarding the payment instrument/modes used by you to make such payments, which may include cardholder name, credit/debit card number (in encrypted form) with expiration date, banking details, wallet details etc.',
                                         style: SafeGoogleFont (
                                           'Open Sans',
                                           fontSize: 16*ffem,
@@ -357,7 +357,7 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
                                     maxWidth: 305*fem,
                                   ),
                                   child: Text(
-                                    'This information is presented to you at the time of making a payment or withdrawal to enable you to complete your payment expeditiously. All information gathered on Quiz Master is securely stored within the Quiz Master-controlled database. The database is stored on servers secured behind a firewall; access to such servers being password-protected and strictly limited based on need-to-know basis.',
+                                    'This information is presented to you at the time of making a payment or withdrawal to enable you to complete your payment expeditiously. All information gathered on Quick Quiz is securely stored within the Quick Quiz-controlled database. The database is stored on servers secured behind a firewall; access to such servers being password-protected and strictly limited based on need-to-know basis.',
                                     style: SafeGoogleFont (
                                       'Open Sans',
                                       fontSize: 16*ffem,

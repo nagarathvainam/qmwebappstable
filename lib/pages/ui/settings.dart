@@ -762,7 +762,7 @@ class _SettingsUiState extends State<SettingsUi> {
                                             ),
                                             child:
                                             Text (
-                                              'Once your Quiz Master account is deleted, it will no longer be accessible by you or anyone else. This action cannot be undone',textAlign: TextAlign.justify,
+                                              'Once your Quick Quiz account is deleted, it will no longer be accessible by you or anyone else. This action cannot be undone',textAlign: TextAlign.justify,
                                               style: SafeGoogleFont (
                                                 'Open Sans',
                                                 fontSize: 14*ffem,

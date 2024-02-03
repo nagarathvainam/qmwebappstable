@@ -471,7 +471,7 @@ class _PlayingQuizState extends State<PlayingQuiz> {
                       maxWidth: 317*fem,
                     ),
                     child: Text(
-                      'A User shall not register or operate more than one User account (Aadhar and Pan Card) with Quiz Master.',
+                      'A User shall not register or operate more than one User account (Aadhar and Pan Card) with Quick Quiz.',
                       style: SafeGoogleFont (
                         'Open Sans',
                         fontSize: 16*ffem,
@@ -488,7 +488,7 @@ class _PlayingQuizState extends State<PlayingQuiz> {
                       maxWidth: 330*fem,
                     ),
                     child: Text(
-                      'Persons below the age of eighteen (18) years are not allowed to participate in any of the Quiz Schedules on our Quiz Master App. The Users will have to disclose their real age at the time of getting access into the Quiz Master App.',
+                      'Persons below the age of eighteen (18) years are not allowed to participate in any of the Quiz Schedules on our Quick Quiz App. The Users will have to disclose their real age at the time of getting access into the Quick Quiz App.',
                       style: SafeGoogleFont (
                         'Open Sans',
                         fontSize: 16*ffem,
