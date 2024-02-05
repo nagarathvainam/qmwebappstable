@@ -1478,7 +1478,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
                                           fontSize: 22*ffem,
                                           fontWeight: FontWeight.w800,
                                           height: 1.4545454545*ffem/fem,
-                                          color: Color(0xff000000),
+                                          color: Color(0xffffffff),
                                         ),
                                       ): CircularProgressIndicator(),
                                     ),

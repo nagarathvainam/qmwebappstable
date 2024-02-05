@@ -32,8 +32,8 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:dart_ipify/dart_ipify.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:device_information/device_information.dart';
-import 'dart:io' show Platform;
+//import 'package:device_information/device_information.dart';
+// import 'dart:io' show Platform;
 import 'package:uuid/uuid.dart';
 import 'package:url_launcher/url_launcher.dart';
 final Uri _url_termsandconditions = Uri.parse('https://quizmaster.world/terms-and-conditions.html');
@@ -118,9 +118,9 @@ showCloseAppConfirm(BuildContext context)
                     prefs.setString('scheduleRefID', "");
                     if (Platform.isAndroid) {
                       SystemNavigator.pop();
-                    } else if (Platform.isIOS) {
+                    } /*else if (Platform.isIOS) {
                       exit(0);
-                    }
+                    }*/
                   },
                   child: const Text(
                     'Confirm Close',
@@ -205,7 +205,7 @@ class _LoginUiPageState extends State<LoginUiPage> {
   }
 
 
-  Future<void> initPlatformState() async {
+  /*Future<void> initPlatformState() async {
 
     late String platformVersion,
         imeiNo = '',
@@ -309,13 +309,13 @@ print(Platform.isIOS);
     } on PlatformException catch (e) {
       platformVersion = 'Device info Error:${e.message}';
     }
-  }
+  }*/
   @override
   void initState() {
       super.initState();
       //_getSdkVersion();
 
-    initPlatformState();
+    //initPlatformState();
     subscription = Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
       if(result==ConnectivityResult.none){
         navigateofflinescreen();
@@ -512,7 +512,7 @@ print(Platform.isIOS);
 
 
             SizedBox(width: ffem*20,),
-            (Platform.isIOS)?SizedBox(height: ffem*20,):SizedBox(),
+            //(Platform.isIOS)?SizedBox(height: ffem*20,):SizedBox(),
           ]
       ),
 
@@ -630,9 +630,7 @@ print(Platform.isIOS);
 
                                // textInputAction: TextInputAction.next,
 
-                                keyboardType: Platform.isIOS?
-                                TextInputType.numberWithOptions(signed: true, decimal: true)
-                                    : TextInputType.number,
+                                keyboardType: TextInputType.number,
 // This regex for only amount (price). you can create your own regex based on your requirement
                                 //inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'^\d+\.?\d{0,4}'))],
 

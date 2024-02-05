@@ -126,8 +126,8 @@ class _QuestionIntroUiPageState extends State<QuestionIntroUiPage> {
                 (e) => false);
       }else if(databaseUser.responseCode!='0'){
         setState(() {
-          showSnackBarSessionTimeOut(databaseUser
-              .responseDescription);
+          /*showSnackBarSessionTimeOut(databaseUser
+              .responseDescription);*/
         });
       }
     });
