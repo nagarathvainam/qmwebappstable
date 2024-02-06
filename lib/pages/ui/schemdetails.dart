@@ -10,7 +10,7 @@ import 'package:quizmaster/pages/Components/EmptyAppBar.dart';
 import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:quizmaster/utils.dart';
-import 'dart:io' show Platform, exit;
+//import 'dart:io' show Platform, exit;
 import 'package:flutter/services.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'dart:async';
@@ -354,17 +354,17 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
                         ) // foreground
                     ),
                     onPressed: () async{
-                      if (Platform.isAndroid) {
-                        //SystemNavigator.pop();
-                        Navigator.pushAndRemoveUntil(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    QuestionDynamicUiPage()),
-                                (e) => false);
-                      } else if (Platform.isIOS) {
-                        //exit(0);
-                      }
+                      // if (Platform.isAndroid) {
+                      //   //SystemNavigator.pop();
+                      //   Navigator.pushAndRemoveUntil(
+                      //       context,
+                      //       MaterialPageRoute(
+                      //           builder: (context) =>
+                      //               QuestionDynamicUiPage()),
+                      //           (e) => false);
+                      // } else if (Platform.isIOS) {
+                      //   //exit(0);
+                      // }
                     },
                     child: const Text(
                       'Confirm Close',
@@ -432,7 +432,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
     double ffem = fem * 0.85;//0.97
     return  WillPopScope(
         onWillPop: () async {
-          showCloseAppConfirm(context);
+        //  showCloseAppConfirm(context);
           // await showDialog or Show add banners or whatever
           // return true if the route to be popped
           return false; // return false if you want to disable device back button click

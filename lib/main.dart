@@ -1,4 +1,4 @@
-import 'dart:io' show Platform;
+//import 'dart:io' show Platform;
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -106,10 +106,10 @@ void main() async {
 
 
   WidgetsFlutterBinding.ensureInitialized();
-  if (!kIsWeb && Platform.isAndroid) {
+  /*if (!kIsWeb && Platform.isAndroid) {
     await Firebase.initializeApp();
     requestFcmPermission();
-  }
+  }*/
   runApp(MyApp());
 }
 
@@ -188,7 +188,7 @@ class _MyAppState extends State<MyApp> {
   int isQuestionRedirect=0;
   @override
   void initState() {
-  requestPermission();
+  //requestPermission();
   super.initState();
   //printKeyHash();
   //getAllPermission();

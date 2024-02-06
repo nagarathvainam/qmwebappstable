@@ -27,7 +27,7 @@ import 'package:quizmaster/pages/ui/hold.dart';
 
 import '../webview/rateus.dart';
 import 'holdpercentagewinning.dart';
-import 'login.dart';
+//import 'login.dart';
 import 'package:quizmaster/pages/question/model/question.dart';
 import 'package:quizmaster/pages/user/model/user.dart';
 import 'package:quizmaster/pages/question/model/questioninsert.dart';
@@ -594,17 +594,19 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
         setState(() {
           showSnackBarSessionTimeOut(databaseUser.responseDescription);
         });
-      }else if(databaseUser.responseCode=='107'){
-        Navigator.pushAndRemoveUntil(
-            context,
-            MaterialPageRoute(
-                builder: (context) => LoginUiPage(title:'You are used Old Version. Please Check &  Update the Latest Version from the Google Play Store, Tab on the Information.',url: 'https://play.google.com/store/apps/details?id=com.quizMaster.quiz_master',)),
-                (e) => false);
+      }
+      else if(databaseUser.responseCode=='107'){
+        // Navigator.pushAndRemoveUntil(
+        //     context,
+        //     MaterialPageRoute(
+        //         builder: (context) => LoginUiPage(title:'You are used Old Version. Please Check &  Update the Latest Version from the Google Play Store, Tab on the Information.',url: 'https://play.google.com/store/apps/details?id=com.quizMaster.quiz_master',)),
+        //         (e) => false);
       }else if(databaseUser.responseCode!='0'){
-        setState(() {
-          showSnackBarSessionTimeOut(databaseUser
-              .responseDescription);
-        });
+        // setState(() {
+        //   showSnackBarSessionTimeOut(databaseUser
+        //       .responseDescription);
+        // }
+        // );
       }
     });
   }
@@ -633,11 +635,11 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     Constants.mobileNumber="";
     Constants.photo="";
     Constants.mailID="";
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(
-            builder: (context) => LoginUiPage(title: '',url: '',)),
-            (e) => false);
+    // Navigator.pushAndRemoveUntil(
+    //     context,
+    //     MaterialPageRoute(
+    //         builder: (context) => LoginUiPage(title: '',url: '',)),
+    //         (e) => false);
   }
 
 
@@ -1478,7 +1480,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
                                           fontSize: 22*ffem,
                                           fontWeight: FontWeight.w800,
                                           height: 1.4545454545*ffem/fem,
-                                          color: Color(0xff000000),
+                                          color: Color(0xffffffff),
                                         ),
                                       ): CircularProgressIndicator(),
                                     ),
@@ -2029,8 +2031,8 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
 
 
                     ),
-                    (Platform.isIOS)?SizedBox(height: ffem*90,):SizedBox(),
-                    (!Platform.isIOS)?SizedBox(height: ffem*90,):SizedBox(),
+                    SizedBox(),
+                   SizedBox(),
                   ],
                 )
             ) // Auto Click Enable / Disabled

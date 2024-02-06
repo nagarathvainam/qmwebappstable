@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui_web';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:flutter/services.dart';
@@ -9,7 +10,7 @@ import 'package:quizmaster/pages/user/model/user.dart';
 import '../../constant/duration.dart';
 import '../question/schedule.dart';
 import 'package:quizmaster/constant/constants.dart';
-import 'dart:io' show Platform, exit;
+//import 'dart:io' show Platform, exit;
 import 'package:quizmaster/pages/ui/noconnection.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'dart:async';
@@ -33,7 +34,7 @@ import 'package:flutter/foundation.dart';
 import 'package:dart_ipify/dart_ipify.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:device_information/device_information.dart';
-import 'dart:io' show Platform;
+//import 'dart:io' show Platform;
 import 'package:uuid/uuid.dart';
 import 'package:url_launcher/url_launcher.dart';
 final Uri _url_termsandconditions = Uri.parse('https://quizmaster.world/terms-and-conditions.html');
@@ -116,11 +117,11 @@ showCloseAppConfirm(BuildContext context)
                   onPressed: () async{
                     final prefs = await SharedPreferences.getInstance();
                     prefs.setString('scheduleRefID', "");
-                    if (Platform.isAndroid) {
-                      SystemNavigator.pop();
-                    } else if (Platform.isIOS) {
-                      exit(0);
-                    }
+                    // if (Platform.isAndroid) {
+                    //   SystemNavigator.pop();
+                    // } else if (Platform.isIOS) {
+                    //   exit(0);
+                    // }
                   },
                   child: const Text(
                     'Confirm Close',
@@ -315,7 +316,7 @@ print(Platform.isIOS);
       super.initState();
       //_getSdkVersion();
 
-    initPlatformState();
+  //  initPlatformState();
     subscription = Connectivity().onConnectivityChanged.listen((ConnectivityResult result) {
       if(result==ConnectivityResult.none){
         navigateofflinescreen();
@@ -512,7 +513,7 @@ print(Platform.isIOS);
 
 
             SizedBox(width: ffem*20,),
-            (Platform.isIOS)?SizedBox(height: ffem*20,):SizedBox(),
+
           ]
       ),
 
@@ -630,9 +631,7 @@ print(Platform.isIOS);
 
                                // textInputAction: TextInputAction.next,
 
-                                keyboardType: Platform.isIOS?
-                                TextInputType.numberWithOptions(signed: true, decimal: true)
-                                    : TextInputType.number,
+                                keyboardType:  TextInputType.number,
 // This regex for only amount (price). you can create your own regex based on your requirement
                                 //inputFormatters: [FilteringTextInputFormatter.allow(RegExp(r'^\d+\.?\d{0,4}'))],
 
