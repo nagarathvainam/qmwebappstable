@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:ui_web';
+//import 'dart:ui_web';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 import 'package:flutter/services.dart';
@@ -929,7 +929,7 @@ print(Platform.isIOS);
                     SizedBox(
                       height: 20.0,
                     ),
-                    Text("Version - "+Constants.releaesversion,style: TextStyle(color: Colors.grey),),
+                    Text("Web View Version - "+Constants.releaesversion,style: TextStyle(color: Colors.grey),),
 
                     SizedBox(
                       height: 10.0,

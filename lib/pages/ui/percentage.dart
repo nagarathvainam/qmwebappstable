@@ -80,7 +80,7 @@ class _PercentageState extends State<Percentage>   with SingleTickerProviderStat
         .whenComplete(() async{
       setState(() {
        // percentagedata=databaseHelper.answerpercentagedata as List;
-        deviceAuthCheck();
+        //deviceAuthCheck();
         syncData();
         optionA=databaseQuestion.optionA;
         optionB=databaseQuestion.optionB;

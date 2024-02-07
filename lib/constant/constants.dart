@@ -2,7 +2,7 @@ import 'duration.dart';
 import 'package:get/get.dart';
 const double kDefaultPadding = 20.0;
 class Constants {
-  static const String releaesversion="3.0.7.37";
+  static const String releaesversion="1.0.0.0";
   static const String iosappversion="3.0.7";
   static const int staging_production=0;// Live -1, Staging(Testing)-0
   static const String https="http://";

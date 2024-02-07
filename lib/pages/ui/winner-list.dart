@@ -19,7 +19,7 @@ import 'package:quizmaster/pages/user/model/user.dart';
 
 import '../question/schedule.dart';
 import '../webview/rateus.dart';
-import 'login.dart';
+//import 'login.dart';
 final rank_list = "asset:///audios/rank-list.mp3";
 class WinnerList extends StatefulWidget {
   //WinnerList({Key? key}) : super(key: key);
@@ -72,7 +72,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
       }
       // Got a new connectivity status!
     });
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getScheduleWiseWinnerData();
     clearScheduleRefID();
     getVideo();
@@ -103,11 +103,11 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
           showSnackBarSessionTimeOut(databaseUser.responseDescription);
         });
       }else if(databaseUser.responseCode=='107'){
-        Navigator.pushAndRemoveUntil(
-            context,
-            MaterialPageRoute(
-                builder: (context) => LoginUiPage(title:'You are used Old Version. Please Check &  Update the Latest Version from the Google Play Store, Tab on the Information.',url: 'https://play.google.com/store/apps/details?id=com.quizMaster.quiz_master',)),
-                (e) => false);
+        // Navigator.pushAndRemoveUntil(
+        //     context,
+        //     MaterialPageRoute(
+        //         builder: (context) => LoginUiPage(title:'You are used Old Version. Please Check &  Update the Latest Version from the Google Play Store, Tab on the Information.',url: 'https://play.google.com/store/apps/details?id=com.quizMaster.quiz_master',)),
+        //         (e) => false);
       }else if(databaseUser.responseCode!='0'){
         setState(() {
           showSnackBarSessionTimeOut(databaseUser
@@ -140,11 +140,11 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
     Constants.mobileNumber="";
     Constants.photo="";
     Constants.mailID="";
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(
-            builder: (context) => LoginUiPage(title: '',url: '',)),
-            (e) => false);
+    // Navigator.pushAndRemoveUntil(
+    //     context,
+    //     MaterialPageRoute(
+    //         builder: (context) => LoginUiPage(title: '',url: '',)),
+    //         (e) => false);
   }
   String ordinal(int number) {
     if(!(number >= 1 && number <= 100)) {//here you change the range

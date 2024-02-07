@@ -137,7 +137,7 @@ class _QuestionTimerIntroUiPageState extends State<QuestionTimerIntroUiPage>  wi
       // Got a new connectivity status!
     });
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
 
 
   }

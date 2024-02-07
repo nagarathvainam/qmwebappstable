@@ -45,7 +45,7 @@ class _EditProfileTabState extends State<EditProfileTab> {
     });
 
     getScheduleOverallHistory();
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
   showSnackBarSessionTimeOut(message) async {
     final snackBar = SnackBar(

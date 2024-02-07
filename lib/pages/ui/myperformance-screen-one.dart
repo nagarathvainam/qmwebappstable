@@ -106,7 +106,7 @@ class _MyPerformanceScreenOneState extends State<MyPerformanceScreenOne> {
     });
     getScheduleWiseWinnerData(widget.scheduleRefID);
     readSharedPrefs();
-    //deviceAuthCheck();
+    ////deviceAuthCheck();
 
 
     Future.delayed(Duration(seconds: 30), () async{

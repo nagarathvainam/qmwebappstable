@@ -53,7 +53,7 @@ class ProfileQuizCorrectWrongListState extends State<ProfileQuizCorrectWrongList
       // Got a new connectivity status!
     });
     getCorrectAnswerData();
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
   deviceAuthCheck() async {
     databaseUser

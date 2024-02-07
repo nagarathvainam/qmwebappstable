@@ -22,6 +22,7 @@ import 'package:quizmaster/pages/user/model/user.dart';
 import 'package:quizmaster/constant/duration.dart';
 import '../webview/rateus.dart';
 import 'login.dart';
+//import 'login.dart';
 final conguratulations_timesup = "asset:///audios/wrong-woops-winnerlist.mp3";
 //final conguratulations_congrat = "asset:///audios/wrong-woops-winnerlist.mp3";
 class QuestionWinningList extends StatefulWidget {
@@ -172,7 +173,7 @@ print(databaseQuestion.responseCode);
       //}
       setState(() {
         WinnersBody=databaseQuestion.WinnersBody;
-        deviceAuthCheck();
+      //  //deviceAuthCheck();
         syncData();
         //("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK:"+databaseQuestion.responseCode);
 
@@ -240,11 +241,11 @@ print(databaseQuestion.responseCode);
     Constants.mobileNumber="";
     Constants.photo="";
     Constants.mailID="";
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(
-            builder: (context) => LoginUiPage(title: '',url: '',)),
-            (e) => false);
+    // Navigator.pushAndRemoveUntil(
+    //     context,
+    //     MaterialPageRoute(
+    //         builder: (context) => LoginUiPage(title: '',url: '',)),
+    //         (e) => false);
   }
   deviceAuthCheck() async {
     databaseUser

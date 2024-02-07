@@ -49,7 +49,7 @@ class _AddMoneyPaymentSuccessfullState extends State<AddMoneyPaymentSuccessfull>
       }
       // Got a new connectivity status!
     });
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
   deviceAuthCheck() async {
     databaseUser

@@ -58,7 +58,7 @@ class _MyPerformanceScreenTwoState extends State<MyPerformanceScreenTwo> {
       // Got a new connectivity status!
     });
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
    //userRefID,GroupRefID,scheduleRefID,Datekey
 
     Future.delayed(Duration(seconds: 30), () async{

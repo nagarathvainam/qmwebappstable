@@ -73,7 +73,7 @@ class _ProfilePreviousQuizDetailState extends State<ProfilePreviousQuizDetail> {
       }
       // Got a new connectivity status!
     });
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getpreviousquizdata();
   }
 

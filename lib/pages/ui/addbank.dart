@@ -51,7 +51,7 @@ class _AddBankState extends State<AddBank> {
       }
       // Got a new connectivity status!
     });
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
   showSnackBarSessionTimeOut(message) async {
     final snackBar = SnackBar(

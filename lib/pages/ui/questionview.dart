@@ -31,7 +31,7 @@ import 'holdpercentagewinning.dart';
 import 'package:quizmaster/pages/question/model/question.dart';
 import 'package:quizmaster/pages/user/model/user.dart';
 import 'package:quizmaster/pages/question/model/questioninsert.dart';
-import 'dart:io' show Platform, exit;
+//import 'dart:io' show Platform, exit;
 final question_load = "asset:///audios/question-load.mp3";
 final option_load = "asset:///audios/option-load.mp3";
 final submit_answer = "asset:///audios/submit-answer.mp3";
@@ -191,7 +191,7 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
     simpleAudioPlayer.setPlaybackRate(rate: rateValue);
     simpleAudioPlayer.play();
     readSharedPrefs();
-    //deviceAuthCheck();
+    ////deviceAuthCheck();
     syncData();
     Constants.printMsg("printMsg Question RefId:$QuestionRefID");
 
@@ -586,61 +586,61 @@ class _QuestionViewUiPageState extends State<QuestionViewUiPage>
 
 */
   }
-  deviceAuthCheck() async {
-    databaseUser
-        .deviceAuth()
-        .whenComplete(() async{
-      if(databaseUser.responseCode=='token_expired'){
-        setState(() {
-          showSnackBarSessionTimeOut(databaseUser.responseDescription);
-        });
-      }
-      else if(databaseUser.responseCode=='107'){
-        // Navigator.pushAndRemoveUntil(
-        //     context,
-        //     MaterialPageRoute(
-        //         builder: (context) => LoginUiPage(title:'You are used Old Version. Please Check &  Update the Latest Version from the Google Play Store, Tab on the Information.',url: 'https://play.google.com/store/apps/details?id=com.quizMaster.quiz_master',)),
-        //         (e) => false);
-      }else if(databaseUser.responseCode!='0'){
-        // setState(() {
-        //   showSnackBarSessionTimeOut(databaseUser
-        //       .responseDescription);
-        // }
-        // );
-      }
-    });
-  }
-  showSnackBarSessionTimeOut(message) async {
-    final snackBar = SnackBar(
-      backgroundColor: Colors.red,
-      content: Text(message),
-      action: SnackBarAction(
-        label: 'Close',
-        textColor: Colors.white,
-        onPressed: () {
-          // Some code to undo the change.
-        },
-      ),
-    );
-
-    // Find the ScaffoldMessenger in the widget tree
-    // and use it to show a SnackBar.
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
-    final prefs = await SharedPreferences.getInstance();
-
-
-    Constants.displayName="";
-    Constants.surName="";
-    // Replaced Constants.userRefID
-    Constants.mobileNumber="";
-    Constants.photo="";
-    Constants.mailID="";
-    // Navigator.pushAndRemoveUntil(
-    //     context,
-    //     MaterialPageRoute(
-    //         builder: (context) => LoginUiPage(title: '',url: '',)),
-    //         (e) => false);
-  }
+  // deviceAuthCheck() async {
+  //   databaseUser
+  //       .deviceAuth()
+  //       .whenComplete(() async{
+  //     if(databaseUser.responseCode=='token_expired'){
+  //       setState(() {
+  //         //showSnackBarSessionTimeOut(databaseUser.responseDescription);
+  //       });
+  //     }
+  //     else if(databaseUser.responseCode=='107'){
+  //       // Navigator.pushAndRemoveUntil(
+  //       //     context,
+  //       //     MaterialPageRoute(
+  //       //         builder: (context) => LoginUiPage(title:'You are used Old Version. Please Check &  Update the Latest Version from the Google Play Store, Tab on the Information.',url: 'https://play.google.com/store/apps/details?id=com.quizMaster.quiz_master',)),
+  //       //         (e) => false);
+  //     }else if(databaseUser.responseCode!='0'){
+  //       // setState(() {
+  //       //   showSnackBarSessionTimeOut(databaseUser
+  //       //       .responseDescription);
+  //       // }
+  //       // );
+  //     }
+  //   });
+  // }
+  // showSnackBarSessionTimeOut(message) async {
+  //   final snackBar = SnackBar(
+  //     backgroundColor: Colors.red,
+  //     content: Text(message),
+  //     action: SnackBarAction(
+  //       label: 'Close',
+  //       textColor: Colors.white,
+  //       onPressed: () {
+  //         // Some code to undo the change.
+  //       },
+  //     ),
+  //   );
+  //
+  //   // Find the ScaffoldMessenger in the widget tree
+  //   // and use it to show a SnackBar.
+  //   ScaffoldMessenger.of(context).showSnackBar(snackBar);
+  //   final prefs = await SharedPreferences.getInstance();
+  //
+  //
+  //   Constants.displayName="";
+  //   Constants.surName="";
+  //   // Replaced Constants.userRefID
+  //   Constants.mobileNumber="";
+  //   Constants.photo="";
+  //   Constants.mailID="";
+  //   // Navigator.pushAndRemoveUntil(
+  //   //     context,
+  //   //     MaterialPageRoute(
+  //   //         builder: (context) => LoginUiPage(title: '',url: '',)),
+  //   //         (e) => false);
+  // }
 
 
   navigateofflinescreen() {

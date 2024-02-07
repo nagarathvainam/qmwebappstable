@@ -95,7 +95,7 @@ class _TransactionTwoWithdrawMoneyState extends State<TransactionTwoWithdrawMone
   @override
   void initState() {
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getBenData();
 
   }

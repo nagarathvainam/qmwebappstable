@@ -61,7 +61,7 @@ class _AddMoneyState extends State<AddMoney> {
     });
     myController.text="2000";
     getWithDrawData();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getBalance();
   }
 

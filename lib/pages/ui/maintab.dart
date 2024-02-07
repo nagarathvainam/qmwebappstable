@@ -38,7 +38,7 @@ class _MainTabState extends State<MainTab> {
       // Got a new connectivity status!
     });
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getTransactionData(3,"","");
 
   }

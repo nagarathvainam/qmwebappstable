@@ -38,7 +38,7 @@ class _CoinTabState extends State<CoinTab> {
       // Got a new connectivity status!
     });
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getTransactionData(5,"","");
 
   }

@@ -45,7 +45,7 @@ class _CashFreeState extends State<CashFree> {
 
     cfPaymentGatewayService.setCallback(verifyPayment, onError,receivedEvent);
     pay();
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
 
   void receivedEvent(String event_name, Map<dynamic, dynamic> meta_data) {

@@ -1578,7 +1578,7 @@ class AspectRatioVideoState extends State<AspectRatioVideo> {
   @override
   void initState() {
     super.initState();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     controller!.addListener(_onVideoControllerUpdate);
   }
   deviceAuthCheck() async {

@@ -131,7 +131,7 @@ class _PaymentSuccessfullState extends State<PaymentSuccessfull> {
                     //   width: 500,
                     //   frameRate: 30, // default is 15 FPS
                     // ),
-                          SizedBox(height: 57*fem),
+                          SizedBox(height: 60*fem),
                           //////////
                           Container(
                             margin: EdgeInsets.fromLTRB(19.93*fem, 0*fem, 29.81*fem, 0*fem),

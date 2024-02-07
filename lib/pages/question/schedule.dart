@@ -164,11 +164,11 @@ class _QuestionDynamicUiPageState extends State<QuestionDynamicUiPage>{//  with 
     Constants.mobileNumber="";
     Constants.photo="";
     Constants.mailID="";
-    Navigator.pushAndRemoveUntil(
-        context,
-        MaterialPageRoute(
-            builder: (context) => LoginUiPage(title: '',url: '',)),
-            (e) => false);
+    // Navigator.pushAndRemoveUntil(
+    //     context,
+    //     MaterialPageRoute(
+    //         builder: (context) => LoginUiPage(title: '',url: '',)),
+    //         (e) => false);
   }
   deviceAuthCheck() async {
     databaseUser
@@ -228,7 +228,7 @@ class _QuestionDynamicUiPageState extends State<QuestionDynamicUiPage>{//  with 
     getVideo();
     // 2016-01-25
 
-    deviceAuthCheck();
+   // //deviceAuthCheck();
     userinfo();
 
 //    IndianTime();

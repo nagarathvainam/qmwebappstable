@@ -31,7 +31,7 @@ class _ProfileWinningDetailsState extends State<ProfileWinningDetails> {
       // Got a new connectivity status!
     });
     //userinfo();
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
   deviceAuthCheck() async {
     databaseUser

@@ -54,7 +54,7 @@ class _LinkBankUIState extends State<LinkBankUI> {
       // Got a new connectivity status!
     });
     //getAllLevelAPICalls();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getBenData();
    // pggetsignature();
     //GenOTPKYC();

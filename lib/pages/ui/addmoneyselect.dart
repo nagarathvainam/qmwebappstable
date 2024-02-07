@@ -38,7 +38,7 @@ class _AddMoneySelectState extends State<AddMoneySelect> {
       // Got a new connectivity status!
     });
     myController.text="2000";
-    deviceAuthCheck();
+    //deviceAuthCheck();
   }
   deviceAuthCheck() async {
     databaseUser

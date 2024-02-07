@@ -40,9 +40,9 @@ class QuestionListAppBar extends StatelessWidget implements PreferredSizeWidget 
       clipBehavior: Clip.none,
       alignment: Alignment.center,
       children: [
-        SizedBox(height: 20,),
+       // SizedBox(height: 20,),
         Container(
-          padding: EdgeInsets.fromLTRB(24*fem, 45.72*fem, 12*fem, 20*fem),
+          padding: EdgeInsets.fromLTRB(24*fem, 0*fem, 12*fem, 20*fem),
           width: double.infinity,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,

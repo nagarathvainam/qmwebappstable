@@ -40,7 +40,7 @@ class _TransactionHistoryState extends State<TransactionHistory> {
       // Got a new connectivity status!
     });
     readSharedPrefs();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     getTransactionData((widget.page=='All')?0:2,"","");
 
   }

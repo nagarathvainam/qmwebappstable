@@ -56,8 +56,8 @@ class PaymentSuccessAppBar extends StatelessWidget implements PreferredSizeWidge
               children: [
               GifView.asset(
                 'assets/gif/transaction.gif',
-                height: 1000,
-                width: 1000,
+                height: 950,
+                width: 950,
                 frameRate: 30, // default is 15 FPS
               ),
 

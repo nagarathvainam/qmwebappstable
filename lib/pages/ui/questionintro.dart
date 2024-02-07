@@ -55,7 +55,7 @@ class _QuestionIntroUiPageState extends State<QuestionIntroUiPage> {
       // Got a new connectivity status!
     });
     super.initState();
-    deviceAuthCheck();
+    //deviceAuthCheck();
     _controller=VideoPlayerController.network(Constants.openURL);
     _controller.initialize().then((_) {
       _controller.setLooping(false);
