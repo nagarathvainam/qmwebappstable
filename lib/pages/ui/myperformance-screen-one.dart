@@ -399,11 +399,11 @@ class _MyPerformanceScreenOneState extends State<MyPerformanceScreenOne> {
                               margin: EdgeInsets.fromLTRB(0*fem, 1.49*fem, 0*fem, 0*fem),
                               width: 32*fem,
                               height: 32*fem,
-                              child: Image.asset(
-                                'assets/icons/mingcute-currency-rupee-line-Yz7.png',
-                                width: 32*fem,
-                                height: 32*fem,
-                              ),
+                              // child: Image.asset(
+                              //   'assets/icons/mingcute-currency-rupee-line-Yz7.png',
+                              //   width: 32*fem,
+                              //   height: 32*fem,
+                              // ),
                             ),
                             Container(
                               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 41*fem, 0.49*fem),
@@ -692,7 +692,7 @@ class _MyPerformanceScreenOneState extends State<MyPerformanceScreenOne> {
                                   Container(
                                     width: double.infinity,
                                     child: Text(
-                                      '₹'+paid.toString()+".00",
+                                      'د.إ'+paid.toString()+".00",
                                       textAlign: TextAlign.center,
                                       style: SafeGoogleFont (
                                         'Open Sans',
@@ -735,7 +735,7 @@ class _MyPerformanceScreenOneState extends State<MyPerformanceScreenOne> {
                                   Container(
                                     width: double.infinity,
                                     child: Text(
-                                      '₹'+tax,
+                                      'د.إ'+tax,
                                       textAlign: TextAlign.center,
                                       style: SafeGoogleFont (
                                         'Open Sans',

@@ -1094,7 +1094,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                       width: 47*fem,
                                       height: 24*fem,
                                       child: Text(
-                                        '₹' + totalAnswer,
+                                        'د.إ' + totalAnswer,
                                         style: SafeGoogleFont (
                                           'Open Sans',
                                           fontSize: 25*ffem,
@@ -1220,7 +1220,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("1",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 24,),
                                                 Text("5",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
                                       ],
@@ -1252,7 +1252,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                             Text("2",style: TextStyle(fontSize: 12),),
                                             SizedBox(width: 12,),
                                             Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                            Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                            Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                           ],
                                         ))
 
@@ -1285,7 +1285,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("6",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 12,),
                                                 Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
 
@@ -1318,7 +1318,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("3",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 12,),
                                                 Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
 
@@ -1350,7 +1350,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("7",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 12,),
                                                 Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
 
@@ -1382,7 +1382,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("4",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 12,),
                                                 Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
 
@@ -1415,7 +1415,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("8",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 12,),
                                                 Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black),),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
 
@@ -1448,7 +1448,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
                                                 Text("5",style: TextStyle(fontSize: 12),),
                                                 SizedBox(width: 12,),
                                                 Text("10",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: (selectAll)?Colors.white:Colors.black)),
-                                                Text("₹",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
+                                                Text("د.إ",style: TextStyle(fontSize: 18,color: (selectAll)?Colors.white:Colors.black))
                                               ],
                                             ))
 
@@ -1611,7 +1611,7 @@ class _SchemeDetailNewPageState extends State<SchemeDetailNewPage> {
 //kakakakak
                             },
                             child: Text(
-                              "Pay ₹ "+checkedOverAllTotal.toString()+" & Play",
+                              "Pay د.إ "+checkedOverAllTotal.toString()+" & Play",
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,

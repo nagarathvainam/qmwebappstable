@@ -765,7 +765,8 @@ class _QuestionDynamicUiPageState extends State<QuestionDynamicUiPage>{//  with 
                                                           topRight: Radius.circular((iscurvedtop==1)?8:0),
                                                         ),
                                                         image: DecorationImage(
-                                                          image:NetworkImage(data[index]['imageURL1']), //(index==0)?AssetImage("assets/quiz-1.png"):AssetImage("assets/quiz-2.png"),//AssetImage("assets/quiz-1.png"),
+                                                          image:AssetImage("assets/photo$index"+".png"),
+                                                          //(index==0)?AssetImage("assets/quiz-1.png"):AssetImage("assets/quiz-2.png"),//AssetImage("assets/quiz-1.png"),
                                                           fit: BoxFit.cover,
                                                         ),
                                                       ),

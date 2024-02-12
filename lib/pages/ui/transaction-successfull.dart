@@ -142,7 +142,7 @@ class _TranactionSuccessfullState extends State<TranactionSuccessfull>   with Si
                     // Waz (887:338)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 25*fem),
                     child: Text(
-                      ' ₹'+widget.transactionamount,
+                      ' د.إ'+widget.transactionamount,
                       style: TextStyle( fontFamily:'Open Sans',decoration: TextDecoration.none,fontSize:33*ffem,fontWeight:FontWeight.w700,height:  0.9696969697*ffem/fem,color: Color(0xff03c982)   ),
 
                     ),
@@ -325,7 +325,7 @@ class _TranactionSuccessfullState extends State<TranactionSuccessfull>   with Si
                       ),
                     ),
                     TextSpan(
-                      text: '₹',
+                      text: 'د.إ',
                       style: SafeGoogleFont (
                         'Open Sans',
                         fontSize: 42*ffem,
@@ -659,7 +659,7 @@ class _TranactionSuccessfullState extends State<TranactionSuccessfull>   with Si
                     // 4uk (942:425)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 25*fem),
                     child: Text(
-                      ' ₹'+widget.transactionamount,
+                      ' د.إ'+widget.transactionamount,
                       style: TextStyle( fontFamily:'Open Sans',decoration: TextDecoration.none,fontSize:33*ffem,fontWeight:FontWeight.w700,height:  0.9696969697*ffem/fem,color: Color(0xff03c982)   ),
 
                     ),

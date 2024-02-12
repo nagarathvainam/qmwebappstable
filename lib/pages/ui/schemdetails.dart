@@ -822,7 +822,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
                                               width: 47*fem,
                                               height: 24*fem,
                                               child: Text(
-                                                '₹'+totalAnswer,
+                                                'د.إ'+totalAnswer,
                                                 style: SafeGoogleFont (
                                                   'Open Sans',
                                                   fontSize: 30*ffem,
@@ -1193,7 +1193,7 @@ class _SchemeDetailPageState extends State<SchemeDetailPage> {
 //kakakakak
                             },
                             child: Text(
-                              "Pay ₹ "+checkedOverAllTotal.toString()+" & Play",
+                              "Pay د.إ "+checkedOverAllTotal.toString()+" & Play",
                               style: TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,

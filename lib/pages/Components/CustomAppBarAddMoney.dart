@@ -74,7 +74,7 @@ class AddMoneyAppBar extends StatelessWidget implements PreferredSizeWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:  <Widget>[
                           Text('Main Balance',style: TextStyle(color: Colors.white),),
-                          Text('₹'+mainBalance,style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.bold),),
+                          Text('د.إ'+mainBalance,style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.bold),),
 
                         ],
                       )),
@@ -117,7 +117,7 @@ SizedBox(height:20)
                                               text: 'Wallet Balannce',
                                               style: TextStyle(color: Colors.white,fontSize: 12),
                                               children: <TextSpan>[
-                                                TextSpan(text: '\n₹ 5,432', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,)),
+                                                TextSpan(text: '\nد.إ 5,432', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,)),
 
                                               ],
                                             ),

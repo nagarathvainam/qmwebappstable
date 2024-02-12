@@ -243,7 +243,7 @@ class _AddMoneyState extends State<AddMoney> {
                       ),
                     ),
                     SizedBox(height: 10,),
-                    Padding(padding:EdgeInsets.only(left: 20.0),child:Text("Payment of ₹"+widget.transactionAmount,style: TextStyle(color: Colors.black,fontWeight:FontWeight.bold, fontSize: 18))),
+                    Padding(padding:EdgeInsets.only(left: 20.0),child:Text("Payment of د.إ"+widget.transactionAmount,style: TextStyle(color: Colors.black,fontWeight:FontWeight.bold, fontSize: 18))),
                     SizedBox(height: 10,),
                     new Center(
                         child: SizedBox(
@@ -381,7 +381,7 @@ class _AddMoneyState extends State<AddMoney> {
                                 hintText: "",
                                 floatingLabelBehavior:
                                 FloatingLabelBehavior.always,
-                                prefixText: "₹",
+                                prefixText: "د.إ",
                               ),
 
                               validator: FormBuilderValidators.compose([
@@ -435,7 +435,7 @@ class _AddMoneyState extends State<AddMoney> {
                                     ],
                                   ),
                                   child: Padding(padding: EdgeInsets.all(8.0),child:Text(
-                                      '₹ 2,000',
+                                      'د.إ 2,000',
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 16*ffem,
@@ -472,7 +472,7 @@ class _AddMoneyState extends State<AddMoney> {
                                     ],
                                   ),
                                   child: Padding(padding: EdgeInsets.all(8.0),child:Text(
-                                      '₹ 1,000',
+                                      'د.إ 1,000',
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 16*ffem,
@@ -510,7 +510,7 @@ class _AddMoneyState extends State<AddMoney> {
                                     ],
                                   ),
                                   child: Padding(padding: EdgeInsets.all(8.0),child:Text(
-                                      '₹ 500',
+                                      'د.إ 500',
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 16*ffem,
@@ -548,7 +548,7 @@ class _AddMoneyState extends State<AddMoney> {
                                     ],
                                   ),
                                   child: Padding(padding: EdgeInsets.all(8.0),child:Text(
-                                      '₹ 100',
+                                      'د.إ 100',
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 16*ffem,

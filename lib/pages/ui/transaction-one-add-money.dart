@@ -370,7 +370,7 @@ class _TransactionOneAddMoneyState extends State<TransactionOneAddMoney> {
                                         width: 85*fem,
                                         height: 24*fem,
                                         child: Text(
-                                          (Constants.mainBalance=="0")?"₹0.00":'₹'+Constants.mainBalance,
+                                          (Constants.mainBalance=="0")?"₹0.00":'د.إ'+Constants.mainBalance,
                                           style: SafeGoogleFont (
                                             'Open Sans',
                                             fontSize: 24*ffem,
@@ -480,7 +480,7 @@ class _TransactionOneAddMoneyState extends State<TransactionOneAddMoney> {
                                                 ),
                                                 Text(
                                                   // 4Ch (2:3645)
-                                                  '₹500',
+                                                  'د.إ500',
                                                   style: SafeGoogleFont (
                                                     'Open Sans',
                                                     fontSize: 16*ffem,
@@ -572,7 +572,7 @@ class _TransactionOneAddMoneyState extends State<TransactionOneAddMoney> {
                                                 ),
                                                 Text(
                                                   // 6SD (2:3643)
-                                                  '₹'+Constants.mainBalance,
+                                                  'د.إ'+Constants.mainBalance,
                                                   style: SafeGoogleFont (
                                                     'Open Sans',
                                                     fontSize: 16*ffem,

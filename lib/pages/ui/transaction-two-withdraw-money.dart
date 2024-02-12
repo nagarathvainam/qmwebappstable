@@ -280,7 +280,7 @@ class _TransactionTwoWithdrawMoneyState extends State<TransactionTwoWithdrawMone
                       ),
                     ),
                     SizedBox(height: 10,),
-                    Padding(padding:EdgeInsets.only(left: 20.0),child:Text("Payment of ₹"+widget.amount,style: TextStyle(color: Colors.black,fontWeight:FontWeight.bold, fontSize: 18))),
+                    Padding(padding:EdgeInsets.only(left: 20.0),child:Text("Payment of د.إ"+widget.amount,style: TextStyle(color: Colors.black,fontWeight:FontWeight.bold, fontSize: 18))),
                     SizedBox(height: 10,),
                     new Center(
                         child: SizedBox(
@@ -817,7 +817,7 @@ class _TransactionTwoWithdrawMoneyState extends State<TransactionTwoWithdrawMone
                                               width: 61*fem,
                                               height: 16*fem,
                                               child: Text(
-                                                '₹'+widget.amount,
+                                                'د.إ'+widget.amount,
                                                 style: SafeGoogleFont (
                                                   'Open Sans',
                                                   fontSize: 16*ffem,
@@ -871,7 +871,7 @@ class _TransactionTwoWithdrawMoneyState extends State<TransactionTwoWithdrawMone
                                     hintText: "",
                                     floatingLabelBehavior:
                                     FloatingLabelBehavior.always,
-                                    prefixText: "₹",
+                                    prefixText: "د.إ",
                                   ),
 
                                   validator: FormBuilderValidators.compose([

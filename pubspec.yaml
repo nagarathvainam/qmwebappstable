@@ -288,6 +288,9 @@ flutter:
       - assets/background/group-762360-CYT.png
       - assets/icons/fa6-solid-crown.png
       - assets/question/frame-762466.png
+      - assets/photo0.png
+      - assets/photo1.png
+      - assets/photo2.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

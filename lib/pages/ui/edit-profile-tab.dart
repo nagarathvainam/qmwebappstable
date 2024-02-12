@@ -357,7 +357,7 @@ class _EditProfileTabState extends State<EditProfileTab> {
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            '₹ '+overAllWinningAmount,
+                                            'د.إ '+overAllWinningAmount,
                                             style: SafeGoogleFont (
                                               'Open Sans',
                                               fontSize: 20*ffem,

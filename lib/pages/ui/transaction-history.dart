@@ -359,7 +359,7 @@ class _TransactionHistoryState extends State<TransactionHistory> {
                                     color: Color(( transactiondata[index]['crDrType']=="CR")?0xff03c982:0xffc90000),
                                   ),
                                 ))]),
-                              Column(children:[Padding(padding:  EdgeInsets.only(bottom: 5 ,top: 15), child:Text('₹'+transactiondata[index]['crDrAmount'].toString(),
+                              Column(children:[Padding(padding:  EdgeInsets.only(bottom: 5 ,top: 15), child:Text('د.إ'+transactiondata[index]['crDrAmount'].toString(),
                                 style: SafeGoogleFont (
                                   'Open Sans',
                                   fontSize: 14*ffem,
@@ -369,9 +369,9 @@ class _TransactionHistoryState extends State<TransactionHistory> {
                                 ),
 
                               ))]),
-                              Column(children:[Padding(padding:  EdgeInsets.only(bottom: 5 ,top: 15), child:Text('₹'+transactiondata[index]['previousBalance'].toString()))]),
+                              Column(children:[Padding(padding:  EdgeInsets.only(bottom: 5 ,top: 15), child:Text('د.إ'+transactiondata[index]['previousBalance'].toString()))]),
                               Column(children:[
-                                Padding(padding:  EdgeInsets.only(bottom: 5 ,top: 15), child:Text('₹'+transactiondata[index]['currentBalance'].toString()))]),
+                                Padding(padding:  EdgeInsets.only(bottom: 5 ,top: 15), child:Text('د.إ'+transactiondata[index]['currentBalance'].toString()))]),
 
                             ]),
 

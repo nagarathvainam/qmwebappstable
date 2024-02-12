@@ -118,7 +118,7 @@ class mmwAppBar extends StatelessWidget implements PreferredSizeWidget {
                                   ),
                                   children: [
                                     TextSpan(
-                                      text: '₹ '+withdrawnBalance,
+                                      text: 'د.إ '+withdrawnBalance,
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 20*ffem,
@@ -168,7 +168,7 @@ SizedBox(width: 3,),
                                   ),
                                   children: [
                                     TextSpan(
-                                      text: '₹ '+dailyLimit,
+                                      text: 'د.إ '+dailyLimit,
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 20*ffem,

@@ -744,7 +744,7 @@ print(databaseQuestion.responseCode);
                                                 child:Row(
                                                   children:  <Widget>[
                                                     //Icon(Icons.timer,color: (index==0)?Color(0xffFFFFFF):Color(0xFF808080),),
-                                                    Text("₹"+questionwisewinnerdata[index]['winningPrice'],style: TextStyle(fontSize: 14,color:(index==0)?Color(0xffFFFFFF):Color(0xFF808080)),),
+                                                    Text("د.إ"+questionwisewinnerdata[index]['winningPrice'],style: TextStyle(fontSize: 14,color:(index==0)?Color(0xffFFFFFF):Color(0xFF808080)),),
                                                   ],
                                                 ))
 

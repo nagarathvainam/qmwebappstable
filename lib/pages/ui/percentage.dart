@@ -1333,7 +1333,7 @@ class _PercentageState extends State<Percentage>   with SingleTickerProviderStat
                                         ),
                                       ),
                                       TextSpan(
-                                        text: '₹'+widget.winningPrice,
+                                        text: 'د.إ'+widget.winningPrice,
                                         style: SafeGoogleFont (
                                           'Open Sans',
                                           fontSize: 20*ffem,

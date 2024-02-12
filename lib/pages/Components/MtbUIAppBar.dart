@@ -75,7 +75,7 @@ class MtbUIAppBar extends StatelessWidget implements PreferredSizeWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children:  <Widget>[
                               Text('Withdraw Day Limit',style: TextStyle(color: Colors.white),),
-                              Text('₹ 4,200/5000',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
+                              Text('د.إ 4,200/5000',style: TextStyle(color: Colors.white,fontSize: 20,fontWeight: FontWeight.w600),),
 
                             ],
                           )),
@@ -118,7 +118,7 @@ class MtbUIAppBar extends StatelessWidget implements PreferredSizeWidget {
                                               text: 'Wallet Balannce',
                                               style: TextStyle(color: Colors.white,fontSize: 12),
                                               children: <TextSpan>[
-                                                TextSpan(text: '\n₹ 5,432', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,)),
+                                                TextSpan(text: '\nد.إ 5,432', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,)),
 
                                               ],
                                             ),

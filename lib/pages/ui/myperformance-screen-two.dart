@@ -760,7 +760,7 @@ Positioned(
                                               ),
 
                                               TextSpan(
-                                                text: '₹'+correctanswerdata[index]['winningPrice'],
+                                                text: 'د.إ'+correctanswerdata[index]['winningPrice'],
                                                 style: SafeGoogleFont (
                                                   'Open Sans',
                                                   fontSize: 14*ffem,

@@ -75,7 +75,7 @@ class WalletMoneyWithdrawAppBar extends StatelessWidget implements PreferredSize
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children:  <Widget>[
                               Text('Withdraw Balance',style: TextStyle(color: Colors.white),),
-                              Text('₹'+withdrawnBalance,style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.bold),),
+                              Text('د.إ'+withdrawnBalance,style: TextStyle(color: Colors.white,fontSize: 24,fontWeight: FontWeight.bold),),
 
                             ],
                           )),
@@ -118,7 +118,7 @@ class WalletMoneyWithdrawAppBar extends StatelessWidget implements PreferredSize
                                               text: 'Wallet Balannce',
                                               style: TextStyle(color: Colors.white,fontSize: 12),
                                               children: <TextSpan>[
-                                                TextSpan(text: '\n₹ 5,432', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,)),
+                                                TextSpan(text: '\nد.إ 5,432', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24,)),
 
                                               ],
                                             ),

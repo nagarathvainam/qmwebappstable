@@ -66,7 +66,7 @@ class mtbAppBar extends StatelessWidget implements PreferredSizeWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only(right: 145), //apply padding to all four sides
-                      child:Text('Max Withdrawable amount is ₹'+dailyLimit,style: TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.w400 ),),
+                      child:Text('Max Withdrawable amount is د.إ'+dailyLimit,style: TextStyle(color: Colors.white,fontSize: 12,fontWeight: FontWeight.w400 ),),
                   ),
               // Align(
               //   alignment: Alignment.topLeft,
@@ -115,7 +115,7 @@ class mtbAppBar extends StatelessWidget implements PreferredSizeWidget {
                                   ),
                                   children: [
                                     TextSpan(
-                                      text: '₹ '+dailyBalanceAmount,
+                                      text: 'د.إ '+dailyBalanceAmount,
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 20*ffem,
@@ -125,7 +125,7 @@ class mtbAppBar extends StatelessWidget implements PreferredSizeWidget {
                                       ),
                                     ),
                                     TextSpan(
-                                      text: ' / ₹ '+dailyLimit,
+                                      text: ' / د.إ '+dailyLimit,
                                     ),
                                   ],
                                 ),

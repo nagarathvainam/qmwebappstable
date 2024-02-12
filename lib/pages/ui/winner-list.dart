@@ -381,7 +381,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                                 ),
                                                 children: [
                                                   const TextSpan(
-                                                    text: '₹',
+                                                    text: 'د.إ',
                                                   ),
                                                   TextSpan(
                                                     text: firstRankWinnerAmount,
@@ -468,7 +468,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                             ),
                                             children: [
                                               const TextSpan(
-                                                text: '₹',
+                                                text: 'د.إ',
                                               ),
                                               TextSpan(
                                                 text: thirdRankWinnerAmount,
@@ -576,7 +576,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                             ),
                                             children: [
                                               const TextSpan(
-                                                text: '₹',
+                                                text: 'د.إ',
                                               ),
                                               TextSpan(
                                                 text: secondRankWinnerAmount,
@@ -722,7 +722,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
 
                                           ),
                                           Text(
-                                            '₹'+defaultRankWinnerAmount,
+                                            'د.إ'+defaultRankWinnerAmount,
                                             textAlign: TextAlign.center,
                                             style: SafeGoogleFont (
                                               'Open Sans',
@@ -870,7 +870,7 @@ class _WinnerListState extends State<WinnerList>   with SingleTickerProviderStat
                                                                           ),
                                                                         ),
                                                                         Text(
-                                                                          '₹'+winnerscheduledata[index]['winningAmount'],
+                                                                          'د.إ'+winnerscheduledata[index]['winningAmount'],
                                                                           style: SafeGoogleFont(
                                                                             'Open Sans',
                                                                             fontSize: 14 * ffem,
