@@ -24,7 +24,8 @@ import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:quizmaster/pages/user/model/user.dart';
 import 'dart:io' show Platform, exit;
-import '../webview/rateus.dart';
+// import '../webview/rateus.dart';
+
 import 'login.dart';
 class EditProfileUiPage extends StatefulWidget {
   EditProfileUiPage({Key? key}) : super(key: key);

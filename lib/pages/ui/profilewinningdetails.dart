@@ -370,7 +370,7 @@ class _ProfileWinningDetailsState extends State<ProfileWinningDetails> {
                                   Container(
                                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
                                     child: Text(
-                                      'Your State of Residence',
+                                      'Your Country',
                                       style: SafeGoogleFont (
                                         'Open Sans',
                                         fontSize: 12*ffem,

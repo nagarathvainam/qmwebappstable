@@ -235,26 +235,26 @@ class QuestionListAppBar extends StatelessWidget implements PreferredSizeWidget 
                               ],
                             ),
                           ),
-    GestureDetector(
-    onTap: () {
-      Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(
-              builder: (context) =>
-                  TransactionOneAddMoney()),
-              (e) => false);
-
-    },
-    child:Container(
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
-                            width: 24*fem,
-                            height: 24*fem,
-                            child: Image.asset(
-                              'assets/icons/qi-add.png',
-                              width: 24*fem,
-                              height: 24*fem,
-                            ),
-                          )),
+    // GestureDetector(
+    // onTap: () {
+    //   Navigator.pushAndRemoveUntil(
+    //       context,
+    //       MaterialPageRoute(
+    //           builder: (context) =>
+    //               TransactionOneAddMoney()),
+    //           (e) => false);
+    //
+    // },
+    // child:Container(
+    //                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
+    //                         width: 24*fem,
+    //                         height: 24*fem,
+    //                         child: Image.asset(
+    //                           'assets/icons/qi-add.png',
+    //                           width: 24*fem,
+    //                           height: 24*fem,
+    //                         ),
+    //                       )),
                         ],
                       ),
                     ),
