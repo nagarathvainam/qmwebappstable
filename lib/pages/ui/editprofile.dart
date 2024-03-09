@@ -670,7 +670,7 @@ class _EditProfileUiPageState extends State<EditProfileUiPage> {
                                     const Align(
                                         alignment: Alignment.bottomLeft,
                                         child: Text(
-                                          "Your Name (as per your Aadhaar Card)",
+                                          "Your Name ",
                                           style: TextStyle(
                                               fontSize: 16.0,
                                               fontWeight: FontWeight.normal),
@@ -910,7 +910,7 @@ class _EditProfileUiPageState extends State<EditProfileUiPage> {
                                     const Align(
                                         alignment: Alignment.bottomLeft,
                                         child: Text(
-                                          "Your State of Residence",
+                                          "Your Country",
                                           style: TextStyle(
                                               fontSize: 16.0,
                                               fontWeight: FontWeight.normal),
@@ -963,102 +963,102 @@ class _EditProfileUiPageState extends State<EditProfileUiPage> {
 
 
                                     /// Your Aadhaar No && Pan
-                                     Align(
-                                        alignment: Alignment.bottomLeft,
-                                        child: Text(
-                                          "Your Aadhaar ID",
-                                          style: TextStyle(
-                                              fontSize: 16.0,
-                                              fontWeight: FontWeight.normal),
-                                        )),
+                                    //  Align(
+                                    //     alignment: Alignment.bottomLeft,
+                                    //     child: Text(
+                                    //       "Your Aadhaar ID",
+                                    //       style: TextStyle(
+                                    //           fontSize: 16.0,
+                                    //           fontWeight: FontWeight.normal),
+                                    //     )),
+                                    // const SizedBox(height: 5),
+                                    // SizedBox(
+                                    //     height: 70.0,
+                                    //     child: FormBuilderTextField(
+                                    //       name: 'aadhar',
+                                    //       controller: TextEditingaadhar,
+                                    //       //initialValue: null,
+                                    //       decoration: InputDecoration(
+                                    //         suffixIcon: (Constants.kycStatus=="2")?Icon(Icons.check_circle,color: Color(0xff64CBC3),):Icon(Icons.close_rounded,color: Color(0xffedecfb),),
+                                    //         border: OutlineInputBorder(
+                                    //           borderRadius:
+                                    //           BorderRadius.circular(10.0),
+                                    //           borderSide: BorderSide(
+                                    //               width: 3,
+                                    //               color: Color(0xFFC8C8C8)),
+                                    //         ),
+                                    //         labelText: '',
+                                    //         hintText: "Enter Your Aadhaar ID",
+                                    //       ),
+                                    //       onChanged: (val) {
+                                    //         setState(() {
+                                    //
+                                    //         });
+                                    //       },
+                                    //       inputFormatters: [
+                                    //         LengthLimitingTextInputFormatter(12),
+                                    //         FilteringTextInputFormatter.allow(RegExp('[0-9]')),
+                                    //       ],
+                                    //       validator: FormBuilderValidators.compose([
+                                    //         FormBuilderValidators.required(),
+                                    //         FormBuilderValidators.numeric(),
+                                    //         // FormBuilderValidators.max(12),
+                                    //
+                                    //       ]),
+                                    //       readOnly: (Constants.kycStatus=="2")?true:false,
+                                    //       //keyboardType: TextInputType.text,
+                                    //       //
+                                    //       // keyboardType: Platform.isIOS?
+                                    //       // TextInputType.numberWithOptions(signed: true, decimal: true)
+                                    //       //     : TextInputType.number,
+                                    //       // textInputAction: TextInputAction.next,
+                                    //     )),
+
                                     const SizedBox(height: 5),
-                                    SizedBox(
-                                        height: 70.0,
-                                        child: FormBuilderTextField(
-                                          name: 'aadhar',
-                                          controller: TextEditingaadhar,
-                                          //initialValue: null,
-                                          decoration: InputDecoration(
-                                            suffixIcon: (Constants.kycStatus=="2")?Icon(Icons.check_circle,color: Color(0xff64CBC3),):Icon(Icons.close_rounded,color: Color(0xffedecfb),),
-                                            border: OutlineInputBorder(
-                                              borderRadius:
-                                              BorderRadius.circular(10.0),
-                                              borderSide: BorderSide(
-                                                  width: 3,
-                                                  color: Color(0xFFC8C8C8)),
-                                            ),
-                                            labelText: '',
-                                            hintText: "Enter Your Aadhaar ID",
-                                          ),
-                                          onChanged: (val) {
-                                            setState(() {
-
-                                            });
-                                          },
-                                          inputFormatters: [
-                                            LengthLimitingTextInputFormatter(12),
-                                            FilteringTextInputFormatter.allow(RegExp('[0-9]')),
-                                          ],
-                                          validator: FormBuilderValidators.compose([
-                                            FormBuilderValidators.required(),
-                                            FormBuilderValidators.numeric(),
-                                            // FormBuilderValidators.max(12),
-
-                                          ]),
-                                          readOnly: (Constants.kycStatus=="2")?true:false,
-                                          //keyboardType: TextInputType.text,
-
-                                          keyboardType: Platform.isIOS?
-                                          TextInputType.numberWithOptions(signed: true, decimal: true)
-                                              : TextInputType.number,
-                                          textInputAction: TextInputAction.next,
-                                        )),
-
-                                    const SizedBox(height: 5),
-                                    const Align(
-                                        alignment: Alignment.bottomLeft,
-                                        child: Text(
-                                          "Your PAN Number",
-                                          style: TextStyle(
-                                              fontSize: 16.0,
-                                              fontWeight: FontWeight.normal),
-                                        )),
-                                    const SizedBox(height: 5),
-                                    SizedBox(
-                                        height: 70.0,
-                                        child: FormBuilderTextField(
-                                          textCapitalization: TextCapitalization.characters,
-                                          name: 'pan',
-                                          controller: TextEditingpan,
-                                          //initialValue: null,
-                                          decoration: InputDecoration(
-                                            suffixIcon: (Constants.kycStatus=="2")?Icon(Icons.check_circle,color: Color(0xff64CBC3),): Icon(Icons.close_rounded,color: Color(0xffedecfb),),
-                                            //  radius: 100,
-
-
-                                            border: OutlineInputBorder(
-                                              borderRadius:
-                                              BorderRadius.circular(10.0),
-                                              borderSide: BorderSide(
-                                                  width: 3,
-                                                  color: Color(0xFFC8C8C8)),
-                                            ),
-                                            labelText: '',
-                                            hintText: "Enter Your PAN Number",
-                                          ),
-                                          onChanged: (val) {
-                                            setState(() {});
-                                          },
-                                          inputFormatters: [
-                                            LengthLimitingTextInputFormatter(10),
-                                          ],
-                                          validator: FormBuilderValidators.compose([
-                                            FormBuilderValidators.required(),
-                                          ]),
-                                          keyboardType: TextInputType.text,
-                                          textInputAction: TextInputAction.next,
-                                          readOnly: (Constants.kycStatus=="2")?true:false,
-                                        )),
+                                    // const Align(
+                                    //     alignment: Alignment.bottomLeft,
+                                    //     child: Text(
+                                    //       "Your PAN Number",
+                                    //       style: TextStyle(
+                                    //           fontSize: 16.0,
+                                    //           fontWeight: FontWeight.normal),
+                                    //     )),
+                                    // const SizedBox(height: 5),
+                                    // SizedBox(
+                                    //     height: 70.0,
+                                    //     child: FormBuilderTextField(
+                                    //       textCapitalization: TextCapitalization.characters,
+                                    //       name: 'pan',
+                                    //       controller: TextEditingpan,
+                                    //       //initialValue: null,
+                                    //       decoration: InputDecoration(
+                                    //         suffixIcon: (Constants.kycStatus=="2")?Icon(Icons.check_circle,color: Color(0xff64CBC3),): Icon(Icons.close_rounded,color: Color(0xffedecfb),),
+                                    //         //  radius: 100,
+                                    //
+                                    //
+                                    //         border: OutlineInputBorder(
+                                    //           borderRadius:
+                                    //           BorderRadius.circular(10.0),
+                                    //           borderSide: BorderSide(
+                                    //               width: 3,
+                                    //               color: Color(0xFFC8C8C8)),
+                                    //         ),
+                                    //         labelText: '',
+                                    //         hintText: "Enter Your PAN Number",
+                                    //       ),
+                                    //       onChanged: (val) {
+                                    //         setState(() {});
+                                    //       },
+                                    //       inputFormatters: [
+                                    //         LengthLimitingTextInputFormatter(10),
+                                    //       ],
+                                    //       validator: FormBuilderValidators.compose([
+                                    //         FormBuilderValidators.required(),
+                                    //       ]),
+                                    //       keyboardType: TextInputType.text,
+                                    //       textInputAction: TextInputAction.next,
+                                    //       readOnly: (Constants.kycStatus=="2")?true:false,
+                                    //     )),
                                     const SizedBox(height: 5),
 
                                    /* SizedBox(

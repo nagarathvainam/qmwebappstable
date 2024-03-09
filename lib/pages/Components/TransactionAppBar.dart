@@ -57,7 +57,7 @@ class TransactionAppBar extends StatelessWidget implements PreferredSizeWidget {
               Navigator.pushAndRemoveUntil(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => TransactionOneAddMoney()),
+                      builder: (context) => QuestionDynamicUiPage()),
                       (e) => false);
             },
           ),

@@ -60,43 +60,43 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 iscomment:'',
                 isarrow:0
               ),
-              const Divider(color: Colors.grey),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: 'myqmwallet',
-                title: 'My QM Wallet',
-                infoCount: 0,
-                iscomment:'',
-                isarrow:0
-              ),
-              const Divider(color: Colors.grey),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: 'linkedbankaccounts',
-                title: 'Linked Bank',
-                infoCount: 0,
-                iscomment:(Constants.bankCount>0)?'+ Add Bank':'Pending',
-                isarrow:1
-              ),
-             const Divider(color: Colors.grey),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: 'referralcode',
-                title: 'Referral Code',
-                infoCount: 0,
-                iscomment:'',
-                isarrow:0
-              ),
-              const Divider(color: Colors.grey),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: 'kyc',
-                title: 'KYC',
-                infoCount: 0,
-                iscomment:Constants.kyCcomment,
-                isarrow:1
-              ),
-              const Divider(color: Colors.grey),
+             // const Divider(color: Colors.grey),
+             //  CustomListTile(
+             //    isCollapsed: _isCollapsed,
+             //    icon: 'myqmwallet',
+             //    title: 'My QM Wallet',
+             //    infoCount: 0,
+             //    iscomment:'',
+             //    isarrow:0
+             //  ),
+             //  const Divider(color: Colors.grey),
+             //  CustomListTile(
+             //    isCollapsed: _isCollapsed,
+             //    icon: 'linkedbankaccounts',
+             //    title: 'Linked Bank',
+             //    infoCount: 0,
+             //    iscomment:(Constants.bankCount>0)?'+ Add Bank':'Pending',
+             //    isarrow:1
+             //  ),
+             // // const Divider(color: Colors.grey),
+             //  CustomListTile(
+             //    isCollapsed: _isCollapsed,
+             //    icon: 'referralcode',
+             //    title: 'Referral Code',
+             //    infoCount: 0,
+             //    iscomment:'',
+             //    isarrow:0
+             //  ),
+              // const Divider(color: Colors.grey),
+              // CustomListTile(
+              //   isCollapsed: _isCollapsed,
+              //   icon: 'kyc',
+              //   title: 'KYC',
+              //   infoCount: 0,
+              //   iscomment:Constants.kyCcomment,
+              //   isarrow:1
+              // ),
+            /*  const Divider(color: Colors.grey),
               CustomListTile(
                 isCollapsed: _isCollapsed,
                 icon: 'gamepolocy',
@@ -134,7 +134,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 infoCount: 0,
                 iscomment:'',
                 isarrow:0
-              ),
+              ),*/
               const Divider(color: Colors.grey),
               CustomListTile(
                 isCollapsed: _isCollapsed,
@@ -144,15 +144,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 iscomment:'',
                 isarrow:0
               ),
-              const Divider(color: Colors.grey),
-              CustomListTile(
-                isCollapsed: _isCollapsed,
-                icon: 'rateus',
-                title: 'Rate Us',
-                infoCount: 0,
-                iscomment:'',
-                isarrow:0
-              ),
+              // const Divider(color: Colors.grey),
+              // CustomListTile(
+              //   isCollapsed: _isCollapsed,
+              //   icon: 'rateus',
+              //   title: 'Rate Us',
+              //   infoCount: 0,
+              //   iscomment:'',
+              //   isarrow:0
+              // ),
               const Divider(color: Colors.grey),
               CustomListTile(
                 isCollapsed: _isCollapsed,

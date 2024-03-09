@@ -410,7 +410,7 @@ class _EditProfileTabState extends State<EditProfileTab> {
               Container(
                 child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
                   SizedBox(height: 20.0),
-                  DefaultTabController(
+                 /* DefaultTabController(
                       length: 2, // length of tabs
                       initialIndex: initialindex,
                       child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: <Widget>[
@@ -440,12 +440,14 @@ class _EditProfileTabState extends State<EditProfileTab> {
                                 border: Border(top: BorderSide(color: Colors.grey, width: 0.5))
                             ),
                             child: TabBarView(children: <Widget>[
-                              ProfilePreviousQuizDetail(), ProfileWinningDetails()],
+                              ProfilePreviousQuizDetail(),
+                              ProfileWinningDetails()
+                            ],
                             )
                         )
                       ]
                       )
-                  ),
+                  ),*/
                 ]
                 ),
               ),
